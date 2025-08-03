@@ -60,7 +60,7 @@ public class MeleeWeaponBehaviour : MonoBehaviour
         }
         else if (col.TryGetComponent(out ShootingSignBehaviour _shootingSignBehaviour))
         {
-            if (_shootingSignBehaviour.canGetHit)
+            if (_shootingSignBehaviour.canGetHit && !_shootingSignBehaviour.isOnlyShootable)
             {
                 WeaponVisualEffects();
                 _shootingSignBehaviour.StartCoroutine(_shootingSignBehaviour.SnapDownOnHit());

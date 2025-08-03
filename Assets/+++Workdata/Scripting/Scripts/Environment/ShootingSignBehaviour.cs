@@ -5,7 +5,9 @@ using UnityEngine;
 public class ShootingSignBehaviour : MonoBehaviour
 {
     [HideInInspector] public bool canGetHit = true;
+    public bool isOnlyShootable;
     [SerializeField] private float shrinkYSizeOnShot = .6f;
+    [SerializeField] string sortingLayerOnShot;
 
     public IEnumerator SnapDownOnHit()
     {
@@ -15,15 +17,19 @@ public class ShootingSignBehaviour : MonoBehaviour
 
         transform.localScale = new Vector3(_scale, shrinkYSizeOnShot, _scale);
 
+        GetComponent<SpriteRenderer>().sortingLayerName = sortingLayerOnShot;
+
         if (TutorialManager.Instance.playedFirstDialogue)
         {
-            TutorialManager.Instance.AddAndCheckShotSigns();
+            
         }
+
+        TutorialManager.Instance.AddAndCheckShotSigns();
 
         yield return new WaitForSeconds(1);
         
-        transform.localScale = new Vector3(_scale, _scale, _scale);
+        //transform.localScale = new Vector3(_scale, _scale, _scale);
 
-        canGetHit = true;
+        //canGetHit = true;
     }
 }
