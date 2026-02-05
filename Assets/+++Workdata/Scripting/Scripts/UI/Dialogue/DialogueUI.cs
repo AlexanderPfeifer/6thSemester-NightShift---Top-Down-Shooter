@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.Serialization;
 
 public class DialogueUI : MonoBehaviour
@@ -279,6 +280,11 @@ public class DialogueUI : MonoBehaviour
         StartCoroutine(TypeTextCoroutine("Peggy:" + "\n" + "...", null, currentTextBox));
         dialogueShop[dialogueCountShop].dialogueEndAction?.Invoke();
         dialogueCountShop++;
+    }
+
+    private void GetDialogueBasedOnLanguage(int currentText)
+    {
+        //dialogueWalkieTalkie[currentText].languages[LocalizationSettings.SelectedLocale.Identifier]
     }
 
     public void PlayNextDialogueText()

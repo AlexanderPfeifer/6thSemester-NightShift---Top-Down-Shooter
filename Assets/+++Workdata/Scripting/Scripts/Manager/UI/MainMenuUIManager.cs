@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
-using UnityEditor.Localization.Editor;
 
 public class MainMenuUIManager : Singleton<MainMenuUIManager>
 {
