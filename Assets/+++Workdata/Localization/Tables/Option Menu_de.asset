@@ -23,11 +23,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1561224904704
-    m_Localized: "Gesamtlautst\xE4rke"
+    m_Localized: "Gesamt Lautst\xE4rke"
     m_Metadata:
       m_Items: []
   - m_Id: 1566971101184
-    m_Localized: Soundeffekte
+    m_Localized: Sound Effekte
     m_Metadata:
       m_Items: []
   - m_Id: 1564504850432
