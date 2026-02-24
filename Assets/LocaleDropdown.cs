@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -6,11 +7,17 @@ using UnityEngine.Localization.Settings;
 
 public class LocaleDropdown : MonoBehaviour
 {
+    [Header("PlayerPrefs")]
+    private static int localeIndex;
+    private const string LocalePlayerPrefs = "Locale";
+
     private TMP_Dropdown dropdown;
 
     IEnumerator Start()
     {
         dropdown = GetComponent<TMP_Dropdown>();
+
+        GetLocalePlayerPrefs();
 
         // Wait for the localization system to initialize
         yield return LocalizationSettings.InitializationOperation;
@@ -21,8 +28,10 @@ public class LocaleDropdown : MonoBehaviour
         for (int i = 0; i < LocalizationSettings.AvailableLocales.Locales.Count; ++i)
         {
             var locale = LocalizationSettings.AvailableLocales.Locales[i];
+
             if (LocalizationSettings.SelectedLocale == locale)
                 selected = i;
+
             options.Add(new TMP_Dropdown.OptionData(locale.name));
         }
         dropdown.options = options;
@@ -31,8 +40,18 @@ public class LocaleDropdown : MonoBehaviour
         dropdown.onValueChanged.AddListener(LocaleSelected);
     }
 
+    private void GetLocalePlayerPrefs()
+    {
+        localeIndex = PlayerPrefs.GetInt(LocalePlayerPrefs, localeIndex);
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[localeIndex];
+    }
+
     static void LocaleSelected(int index)
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
+        localeIndex = index;
+        PlayerPrefs.SetInt(LocalePlayerPrefs, localeIndex);
+
+        Debug.Log(localeIndex);
     }
 }
