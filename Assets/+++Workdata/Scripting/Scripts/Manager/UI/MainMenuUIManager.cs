@@ -88,11 +88,6 @@ public class MainMenuUIManager : Singleton<MainMenuUIManager>
         }
     }
 
-    public void ChangeLanguage()
-    {
-        
-    }
-
     public void JoinOurDiscord()
     {
         Application.OpenURL("https://discord.gg/mmYek3rY/");
