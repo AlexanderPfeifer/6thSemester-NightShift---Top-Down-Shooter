@@ -67,7 +67,7 @@ public class DialogueUI : MonoBehaviour
         {
             if (dialogueShop.Length >= currentDialogueCount)
             {
-                StopCurrentAndTypeNewTextCoroutine(dialogueShop[currentDialogueCount].dialogues[dialogueTextCount], dialogueShop, currentTextBox);
+                StopCurrentAndTypeNewTextCoroutine(dialogueShop[currentDialogueCount].languages[LocalizationManager.Instance.localeIndex].dialogues[dialogueTextCount], dialogueShop, currentTextBox);
             }
         }
         else
@@ -114,7 +114,7 @@ public class DialogueUI : MonoBehaviour
             if (dialogueShop.Length >= currentDialogueCount)
             {
                 //-1 because here the game thinks the dialogue was already played, but we want to finish the current one
-                currentTextBox.text = dialogueShop[currentDialogueCount].dialogues[dialogueTextCount - 1];
+                currentTextBox.text = dialogueShop[currentDialogueCount].languages[LocalizationManager.Instance.localeIndex].dialogues[dialogueTextCount - 1];
             }
         }
         else

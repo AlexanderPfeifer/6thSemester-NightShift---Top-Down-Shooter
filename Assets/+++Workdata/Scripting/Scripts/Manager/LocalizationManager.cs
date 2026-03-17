@@ -1,22 +1,15 @@
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.Localization.Settings;
 
-public class LocalizationManager : MonoBehaviour
+public class LocalizationManager : SingletonPersistent<LocalizationManager>
 {
     [Header("Localization")]
-    private const string LocalizationPlayerPrefs = "Localization";
-    private int localizationInt;
+    public string LocalePlayerPrefs = "Locale";
+    public int localeIndex;
 
-    public void SetLocalizationPlayerPrefs()
+    public void GetLocalePlayerPrefs()
     {
-        localizationInt = PlayerPrefs.GetInt(LocalizationPlayerPrefs, localizationInt);
-        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[localizationInt];
-    }
-
-    private void ChangeLanguage(int languageInt)
-    {
-        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[languageInt];
-        PlayerPrefs.SetFloat(LocalizationPlayerPrefs, languageInt);
+        localeIndex = PlayerPrefs.GetInt(LocalePlayerPrefs, localeIndex);
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[localeIndex];
     }
 }
