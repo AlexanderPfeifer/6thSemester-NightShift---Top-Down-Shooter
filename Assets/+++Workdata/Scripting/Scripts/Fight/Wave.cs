@@ -9,23 +9,12 @@ public class EnemyClusterData
 {
     [FormerlySerializedAs("clusterBeginTime")] [SerializeField, ReadOnly] private string clusterName;
 
-    [Header("WHO"), Tooltip("If multiple enemies are assigned, then they all spawn together")]
     public GameObject[] enemyPrefab;
-
     [FormerlySerializedAs("timeToSpawn")]
-    [Header("WHEN")]
     [Min(0)] public float spawnStartTime;
-    
-    [Header("HOW MANY REPETITIONS")]
     [Min(1)] public int repeatCount;
-    
-    [Header("AT WHAT INTERVAL")]
     [Min(0)] public float timeBetweenSpawns;
-
-    [Header("GROUP ATTACK?")]
     public bool spawnAsGroup = true;
-
-    [Header("UNTIL")]
     [SerializeField, ReadOnly] private float stopsSpawningAtTime;
 
     public void UpdateClusterName()

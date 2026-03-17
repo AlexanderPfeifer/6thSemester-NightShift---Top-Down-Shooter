@@ -1106,7 +1106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d76e3bcc8841e84cbe8d03bbc591a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  equipWeapon: {fileID: 11400000, guid: 0a0a8b71d4f593349a20a92291cc1eaf, type: 2}
+  equipWeapon: {fileID: 11400000, guid: a62bfc000d2866446bb8a4213e4f80fc, type: 2}
   UnlockWeapons:
   - weaponName: Lollipop Shotgun
     getWeapon: 0
@@ -1118,9 +1118,9 @@ MonoBehaviour:
     getWeapon: 0
   - weaponName: Corn Dog Hunting Rifle
     getWeapon: 0
-  activateRide: 0
+  activateRide: 1
   currencyAtStart: 0
-  playWave: 6
+  playWave: 0
 --- !u!1 &2024790019
 GameObject:
   m_ObjectHideFlags: 0
