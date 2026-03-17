@@ -10,7 +10,5 @@ public class Dialogues
 
     public TranslatedDialogue[] languages;
 
-    [TextArea(3, 10)] public List<string> dialogues = new();
-
     public UnityEvent dialogueEndAction;
 }

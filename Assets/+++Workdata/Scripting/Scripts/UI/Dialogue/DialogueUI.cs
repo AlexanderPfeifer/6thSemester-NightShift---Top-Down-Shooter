@@ -74,7 +74,7 @@ public class DialogueUI : MonoBehaviour
         {
             if (dialogueWalkieTalkie.Length >= currentDialogueCount)
             {
-                StopCurrentAndTypeNewTextCoroutine(dialogueWalkieTalkie[currentDialogueCount].dialogues[dialogueTextCount], dialogueWalkieTalkie, currentTextBox);
+                StopCurrentAndTypeNewTextCoroutine(dialogueWalkieTalkie[currentDialogueCount].languages[LocalizationManager.Instance.localeIndex].dialogues[dialogueTextCount], dialogueWalkieTalkie, currentTextBox);
             }
         }
         
@@ -121,7 +121,7 @@ public class DialogueUI : MonoBehaviour
         {
             if (dialogueWalkieTalkie.Length >= currentDialogueCount)
             {
-                currentTextBox.text = dialogueWalkieTalkie[currentDialogueCount].dialogues[dialogueTextCount - 1];
+                currentTextBox.text = dialogueWalkieTalkie[currentDialogueCount].languages[LocalizationManager.Instance.localeIndex].dialogues[dialogueTextCount - 1];
             }
         }
 
@@ -224,7 +224,7 @@ public class DialogueUI : MonoBehaviour
 
     private void CheckDialogueEnd(IReadOnlyList<Dialogues> currentDialogue)
     {
-        if (dialogueTextCount == currentDialogue[currentDialogueCount].dialogues.Count)
+        if (dialogueTextCount == currentDialogue[currentDialogueCount].languages[LocalizationManager.Instance.localeIndex].dialogues.Count)
         {
             dialogueState = DialogueState.DialogueAbleToEnd;
         }
