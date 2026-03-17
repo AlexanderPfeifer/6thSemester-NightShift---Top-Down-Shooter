@@ -84,7 +84,7 @@ public class Ride : Singleton<Ride>
 
         foreach (var _enemyCluster in waves[GameSaveStateManager.Instance.saveGameDataManager.HasWavesFinished()].enemyClusters)
         {            
-            spawnedEnemiesInCluster += _enemyCluster.enemyPrefab.Length * _enemyCluster.spawnCount * _enemyCluster.repeatCount;
+            spawnedEnemiesInCluster += _enemyCluster.enemyPrefab.Length * _enemyCluster.repeatCount;
 
             StartCoroutine(SpawnEnemies(_enemyCluster));
         }
@@ -94,21 +94,23 @@ public class Ride : Singleton<Ride>
     {
         yield return new WaitForSeconds(enemyCluster.spawnStartTime);
 
+        Vector2 _groupPos = GetRandomEdgePosition();
+
         for (int _i = 0; _i < enemyCluster.repeatCount; _i++)
         {
-            for (int _enemyIndex = 0; _enemyIndex < enemyCluster.spawnCount; _enemyIndex++)
+            foreach (var _enemy in enemyCluster.enemyPrefab)
             {
-                Vector2 _groupPos = GetRandomEdgePosition();
-                
-                foreach (var _enemy in enemyCluster.enemyPrefab)
+                if (!enemyCluster.spawnAsGroup)
                 {
-                    Vector2 _randomOffset = Random.insideUnitCircle * radiusInsideGroupSpawning;
-                    Instantiate(_enemy, _groupPos + new Vector2(_randomOffset.x, _randomOffset.y), Quaternion.identity, enemyParent.transform);
-                    currentSpawnedEnemies++;
+                    _groupPos = GetRandomEdgePosition();
                 }
+
+                Vector2 _randomOffset = Random.insideUnitCircle * radiusInsideGroupSpawning;
+                Instantiate(_enemy, _groupPos + new Vector2(_randomOffset.x, _randomOffset.y), Quaternion.identity, enemyParent.transform);
+                currentSpawnedEnemies++;
             }
-            
-            if(_i != enemyCluster.repeatCount - 1)
+
+            if (_i != enemyCluster.repeatCount - 1)
                 yield return new WaitForSeconds(enemyCluster.timeBetweenSpawns);
         }
 
