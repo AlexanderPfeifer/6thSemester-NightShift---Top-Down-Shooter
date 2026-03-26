@@ -35,6 +35,14 @@ MonoBehaviour:
     m_Key: optionMenu.fullScreen
     m_Metadata:
       m_Items: []
+  - m_Id: 59800097688485888
+    m_Key: optionMenu.mainMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59822091633000448
+    m_Key: optionMenu.back
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

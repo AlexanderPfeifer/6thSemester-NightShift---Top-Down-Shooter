@@ -4,8 +4,6 @@ using System.Linq;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.Serialization;
-using static UnityEngine.Rendering.DebugUI.Table;
-using static WeaponBehaviour;
 
 public class TutorialManager : SingletonPersistent<TutorialManager>
 {
@@ -26,12 +24,13 @@ public class TutorialManager : SingletonPersistent<TutorialManager>
     private bool openedShopAfterFirstFight;
     private bool toldAboutAmmoRefill;
 
-    [Header("QuestLogTexts")] 
-    [SerializeField] private string fillAmmo;
-    [SerializeField] private string activateGen;
-    [SerializeField] public string activateRide;
-    [SerializeField] private string doYourJob;
-    public string getNewWeapons;
+    [Header("QuestLogTexts")]
+    [SerializeField] private string[] shootAllSignsTranslated;
+    [SerializeField] private string[] fillAmmoTranslated;
+    [SerializeField] private string[] activateGenTranslated;
+    [SerializeField] public string[] activateRideTranslated;
+    [SerializeField] private string[] doYourJobTranslated;
+    public string[] getNewWeaponsTranslated;
 
     [Header("Dialogue")] 
     [HideInInspector] public bool isExplainingCurrencyDialogue;
@@ -40,6 +39,11 @@ public class TutorialManager : SingletonPersistent<TutorialManager>
     {
         fillAmmoForFree = true;
         talkedAboutCurrency = false;
+    }
+
+    private void Start()
+    {
+        InGameUIManager.Instance.SetWalkieTalkieQuestLog(shootAllSignsTranslated[LocalizationManager.Instance.localeIndex]);
     }
 
     public void ExplainCurrency()
@@ -132,7 +136,7 @@ public class TutorialManager : SingletonPersistent<TutorialManager>
         
         InGameUIManager.Instance.shopUI.changeShopWindowButton.SetActive(true);
         InGameUIManager.Instance.shopUI.switchWindowButtons.SetActive(true);
-        InGameUIManager.Instance.SetWalkieTalkieQuestLog(doYourJob);
+        InGameUIManager.Instance.SetWalkieTalkieQuestLog(doYourJobTranslated[LocalizationManager.Instance.localeIndex]);
         tutorialDone = true;
     }
 
@@ -142,7 +146,7 @@ public class TutorialManager : SingletonPersistent<TutorialManager>
         {
             InGameUIManager.Instance.dialogueUI.DisplayNextDialogue();
             Ride.Instance.rideActivation.interactable = true;
-            InGameUIManager.Instance.SetWalkieTalkieQuestLog(activateGen);
+            InGameUIManager.Instance.SetWalkieTalkieQuestLog(activateGenTranslated[LocalizationManager.Instance.localeIndex]);
             escapeInShop.SetActive(true);
         }
     }
@@ -154,7 +158,7 @@ public class TutorialManager : SingletonPersistent<TutorialManager>
         if (shotSigns == shotSignsToGoAhead)
         {
             InGameUIManager.Instance.dialogueUI.SetWalkieTalkieTextBoxAnimation(true, true);
-            InGameUIManager.Instance.SetWalkieTalkieQuestLog(fillAmmo);
+            InGameUIManager.Instance.SetWalkieTalkieQuestLog(fillAmmoTranslated[LocalizationManager.Instance.localeIndex]);
         }
     }
     

@@ -83,7 +83,7 @@ public class GeneratorUI : MonoBehaviour
     {
         _generator.gateAnim.SetBool("OpenGate", true);
         _generator.interactable = false;
-        InGameUIManager.Instance.SetWalkieTalkieQuestLog(TutorialManager.Instance.activateRide);
+        InGameUIManager.Instance.SetWalkieTalkieQuestLog(TutorialManager.Instance.activateRideTranslated[LocalizationManager.Instance.localeIndex]);
         Ride.Instance.currentRideHealth = Ride.Instance.maxRideHealth;
         Ride.Instance.rideHealthFill.fillAmount = Ride.Instance.currentRideHealth / Ride.Instance.maxRideHealth;
         Ride.Instance.canWinGame = false;

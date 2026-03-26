@@ -238,7 +238,7 @@ public class Ride : Singleton<Ride>
             _balloonCart.ResetBalloons();
         }
             
-        InGameUIManager.Instance.SetWalkieTalkieQuestLog(TutorialManager.Instance.getNewWeapons);
+        InGameUIManager.Instance.SetWalkieTalkieQuestLog(TutorialManager.Instance.getNewWeaponsTranslated[LocalizationManager.Instance.localeIndex]);
         
         PlayerBehaviour.Instance.playerCurrency.AddCurrency(GetCurrentWavePrize(), true);
         
