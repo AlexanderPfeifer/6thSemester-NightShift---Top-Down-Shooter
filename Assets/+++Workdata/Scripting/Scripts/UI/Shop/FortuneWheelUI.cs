@@ -24,12 +24,6 @@ public class FortuneWheelUI : MonoBehaviour
     [SerializeField] private Image weaponImage;
     [SerializeField] private TextMeshProUGUI weaponName;
 
-    [Header("Price Dialogue")] 
-    [SerializeField, TextArea(3, 10)] private string blankDialogue;
-    [SerializeField, TextArea(3, 10)] private string currencyDialogue;
-    [SerializeField, TextArea(3, 10)] private string smallCurrencyDialogue;
-    [SerializeField, TextArea(3, 10)] private string largeCurrencyDialogue;
-
     [Header("Spinning Movement")] 
     [SerializeField] private Vector2Int timeUntilStop;
     [SerializeField] private Vector2Int fullSpinsUntilStop;
@@ -150,7 +144,7 @@ public class FortuneWheelUI : MonoBehaviour
         }
         else
         {
-            StartCoroutine(InGameUIManager.Instance.dialogueUI.TypeTextCoroutine(blankDialogue, null, InGameUIManager.Instance.dialogueUI.currentTextBox));
+            StartCoroutine(InGameUIManager.Instance.dialogueUI.TypeTextCoroutine(InGameUIManager.Instance.dialogueUI.fortuneWheelDialogues[0].languages[LocalizationManager.Instance.localeIndex].dialogues[0], null, InGameUIManager.Instance.dialogueUI.currentTextBox));
         }
     }
 
@@ -180,7 +174,7 @@ public class FortuneWheelUI : MonoBehaviour
 
     public void WinBlank()
     {
-        StartCoroutine(InGameUIManager.Instance.dialogueUI.TypeTextCoroutine(blankDialogue, null, InGameUIManager.Instance.dialogueUI.currentTextBox));
+        StartCoroutine(InGameUIManager.Instance.dialogueUI.TypeTextCoroutine(InGameUIManager.Instance.dialogueUI.fortuneWheelDialogues[0].languages[LocalizationManager.Instance.localeIndex].dialogues[LocalizationManager.Instance.localeIndex], null, InGameUIManager.Instance.dialogueUI.currentTextBox));
         
         AudioManager.Instance.Play("Blank");
     }   
@@ -189,21 +183,21 @@ public class FortuneWheelUI : MonoBehaviour
     {
         PlayerBehaviour.Instance.playerCurrency.AddCurrency(money, true);
         
-        StartCoroutine(InGameUIManager.Instance.dialogueUI.TypeTextCoroutine(smallCurrencyDialogue, null, InGameUIManager.Instance.dialogueUI.currentTextBox));
+        StartCoroutine(InGameUIManager.Instance.dialogueUI.TypeTextCoroutine(InGameUIManager.Instance.dialogueUI.fortuneWheelDialogues[2].languages[LocalizationManager.Instance.localeIndex].dialogues[0], null, InGameUIManager.Instance.dialogueUI.currentTextBox));
     }  
     
     public void WinMediumMoney(int money)
     {
         PlayerBehaviour.Instance.playerCurrency.AddCurrency(money, true);
         
-        StartCoroutine(InGameUIManager.Instance.dialogueUI.TypeTextCoroutine(currencyDialogue, null, InGameUIManager.Instance.dialogueUI.currentTextBox));
+        StartCoroutine(InGameUIManager.Instance.dialogueUI.TypeTextCoroutine(InGameUIManager.Instance.dialogueUI.fortuneWheelDialogues[1].languages[LocalizationManager.Instance.localeIndex].dialogues[0], null, InGameUIManager.Instance.dialogueUI.currentTextBox));
     }    
     
     public void WinLargeCurrency(int money)
     {
         PlayerBehaviour.Instance.playerCurrency.AddCurrency(money, true);
         
-        StartCoroutine(InGameUIManager.Instance.dialogueUI.TypeTextCoroutine(largeCurrencyDialogue, null, InGameUIManager.Instance.dialogueUI.currentTextBox));
+        StartCoroutine(InGameUIManager.Instance.dialogueUI.TypeTextCoroutine(InGameUIManager.Instance.dialogueUI.fortuneWheelDialogues[3].languages[LocalizationManager.Instance.localeIndex].dialogues[0], null, InGameUIManager.Instance.dialogueUI.currentTextBox));
         
         spinCounter = 0;
     }

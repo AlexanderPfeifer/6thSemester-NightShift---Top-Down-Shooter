@@ -38,6 +38,10 @@ MonoBehaviour:
     m_Localized: USCITA
     m_Metadata:
       m_Items: []
+  - m_Id: 89899972757127168
+    m_Localized: "Caricamento\u2026"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -29,7 +29,6 @@ public class ShopUI : MonoBehaviour
     private int currentWeaponSelectionWindow;
     [SerializeField] private string[] selectionWindows;
     public GameObject switchWindowButtons;
-    [SerializeField, TextArea(3, 10)] private string fortuneWheelText;
     public GameObject changeShopWindowButton;
 
     [Header("Controller Selection")]
@@ -173,7 +172,7 @@ public class ShopUI : MonoBehaviour
             _nav.selectOnUp = spinFortuneWheelButton;
             changeWindowButton.navigation = _nav;   
             
-            InGameUIManager.Instance.dialogueUI.StopCurrentAndTypeNewTextCoroutine(fortuneWheelText, null, InGameUIManager.Instance.dialogueUI.currentTextBox);
+            InGameUIManager.Instance.dialogueUI.StopCurrentAndTypeNewTextCoroutine(InGameUIManager.Instance.dialogueUI.fortuneWheelDialogues[4].languages[LocalizationManager.Instance.localeIndex].dialogues[0], null, InGameUIManager.Instance.dialogueUI.currentTextBox);
             fortuneWheel.SetActive(true);
             weapons.SetActive(false);
         }

@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Key: mainMenu.quit
     m_Metadata:
       m_Items: []
+  - m_Id: 89899972757127168
+    m_Key: mainMenu.loading
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

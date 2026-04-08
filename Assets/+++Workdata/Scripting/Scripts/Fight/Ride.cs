@@ -233,7 +233,7 @@ public class Ride : Singleton<Ride>
 
         winConfettiParticles.Play();
 
-        foreach (var _balloonCart in FindObjectsByType<BalloonCartBehaviour>(FindObjectsSortMode.None))
+        foreach (var _balloonCart in FindObjectsByType<BalloonCartBehaviour>(FindObjectsInactive.Include))
         {
             _balloonCart.ResetBalloons();
         }

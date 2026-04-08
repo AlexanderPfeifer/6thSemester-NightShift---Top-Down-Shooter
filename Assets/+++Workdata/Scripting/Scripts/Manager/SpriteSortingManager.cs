@@ -4,7 +4,7 @@ public class SpriteSortingManager : MonoBehaviour
 {
     private void Start()
     {
-        SpriteRenderer[] _allSprites = FindObjectsByType<SpriteRenderer>(FindObjectsSortMode.None);
+        SpriteRenderer[] _allSprites = FindObjectsByType<SpriteRenderer>(FindObjectsInactive.Include);
 
         foreach (var _sprite in _allSprites)
         {

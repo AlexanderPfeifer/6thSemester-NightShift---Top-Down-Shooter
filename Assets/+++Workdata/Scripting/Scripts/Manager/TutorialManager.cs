@@ -34,6 +34,7 @@ public class TutorialManager : SingletonPersistent<TutorialManager>
 
     [Header("Dialogue")] 
     [HideInInspector] public bool isExplainingCurrencyDialogue;
+    [SerializeField, TextArea] private string[] shotAllSignsText;
 
     protected override void Awake()
     {
@@ -71,7 +72,7 @@ public class TutorialManager : SingletonPersistent<TutorialManager>
         {
             toldAboutAmmoRefill = true;
             InGameUIManager.Instance.inGameUICanvasGroup.interactable = true;
-            InGameUIManager.Instance.dialogueUI.StopCurrentAndTypeNewTextCoroutine("Peggy:\nNow go ahead and refill your weapon, momma doesn't have time all day.", null, InGameUIManager.Instance.dialogueUI.currentTextBox);
+            InGameUIManager.Instance.dialogueUI.StopCurrentAndTypeNewTextCoroutine(shotAllSignsText[LocalizationManager.Instance.localeIndex], null, InGameUIManager.Instance.dialogueUI.currentTextBox);
         }
     }
 

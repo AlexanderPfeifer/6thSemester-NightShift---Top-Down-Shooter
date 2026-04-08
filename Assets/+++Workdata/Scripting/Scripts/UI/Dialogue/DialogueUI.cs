@@ -10,6 +10,9 @@ public class DialogueUI : MonoBehaviour
     [Header("DialogueType")]
     [FormerlySerializedAs("dialogue")] public Dialogues[] dialogueShop;
     public Dialogues[] dialogueWalkieTalkie;
+    public Dialogues[] fortuneWheelDialogues;
+
+    [Header("Price Dialogue")]
     public TextMeshProUGUI shopText;
     [FormerlySerializedAs("dialogueText")] public TextMeshProUGUI walkieTalkieText;
     [HideInInspector] public TextMeshProUGUI currentTextBox;

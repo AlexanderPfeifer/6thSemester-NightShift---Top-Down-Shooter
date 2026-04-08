@@ -6,7 +6,13 @@ public class AllButtonsConfiguration : Singleton<AllButtonsConfiguration>
 {
     private void Start()
     {
-        foreach (Button _button in FindObjectsByType<Button>(FindObjectsSortMode.None))
+        foreach (Button _button in FindObjectsByType<Button>(FindObjectsInactive.Include))
+        {
+            AddHoverEvent(_button.gameObject);
+            _button.onClick.AddListener(() => AudioManager.Instance.Play("ButtonClick"));
+        }
+
+        foreach (Button _button in FindObjectsByType<Button>(FindObjectsInactive.Include))
         {
             AddHoverEvent(_button.gameObject);
             _button.onClick.AddListener(() => AudioManager.Instance.Play("ButtonClick"));
