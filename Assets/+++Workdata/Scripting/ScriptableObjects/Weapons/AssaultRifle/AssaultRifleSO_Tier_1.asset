@@ -18,8 +18,8 @@ MonoBehaviour:
   shootDelay: 0.15
   clipSize: 30
   reloadTime: 1.7
-  weaponDescription: "Peggy:\nWhen the park began offering fast food, I imagined
-    it to be a bit\u2026 different. Serve it hot and fresh, boy."
+  weaponDescription: "Peggy:\nA fry-ghtening display, this thing. This\u2019ll get
+    \u2018em salty in no time."
   weaponAbilityDescription: 
   playerKnockBack: 2
   enemyKnockBackPerBullet: 4

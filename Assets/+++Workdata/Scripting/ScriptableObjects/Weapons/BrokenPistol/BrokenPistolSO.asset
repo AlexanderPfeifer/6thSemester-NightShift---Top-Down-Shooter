@@ -18,8 +18,8 @@ MonoBehaviour:
   shootDelay: 0.8
   clipSize: 12
   reloadTime: 1.5
-  weaponDescription: "Peggy:\n\u201CAh, the Broken Pistol. Our boss told me I should
-    donate it to a museum, but I am too attached to it\u2026\u201D"
+  weaponDescription: "Peggy:\nAh, the Broken Pistol. Our boss told me I should donate
+    it to a museum, but I am too attached to it\u2026"
   weaponAbilityDescription: Shoots multiple bullets but not in the direction you
     want it to shoot.
   playerKnockBack: 2.5

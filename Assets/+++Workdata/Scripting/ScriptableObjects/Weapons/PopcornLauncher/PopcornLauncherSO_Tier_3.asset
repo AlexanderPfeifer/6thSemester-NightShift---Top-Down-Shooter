@@ -18,10 +18,8 @@ MonoBehaviour:
   shootDelay: 0.4
   clipSize: 20
   reloadTime: 0.8
-  weaponDescription: 'Peggy:
-
-    The Popcorn Pistol is pretty loud, but the trigger
-    stays buttery smooth, even if you use it more often.'
+  weaponDescription: "Peggy:\nA buttery-smooth trigger, poppin\u2019 loud and clear\u2026
+    let\u2019s give them critters a popcorn-worthy show!"
   weaponAbilityDescription: Oh that's a great one. Activating the special ability
     let the bullets explode and deal areal damage.
   playerKnockBack: 2.5

@@ -11,6 +11,7 @@ public class DialogueUI : MonoBehaviour
     [FormerlySerializedAs("dialogue")] public Dialogues[] dialogueShop;
     public Dialogues[] dialogueWalkieTalkie;
     public Dialogues[] fortuneWheelDialogues;
+    public Dialogues[] shopMenuButtonTexts;
 
     [Header("Price Dialogue")]
     public TextMeshProUGUI shopText;

@@ -136,7 +136,7 @@ public class ShopUI : MonoBehaviour
             PlayerBehaviour.Instance.ammoText.text = "";
             
             AudioManager.Instance.Play("Reload");
-            fillWeaponAmmoButton.GetComponentInChildren<TextMeshProUGUI>().text = "AMMO FULL";
+            fillWeaponAmmoButton.GetComponentInChildren<TextMeshProUGUI>().text = InGameUIManager.Instance.dialogueUI.shopMenuButtonTexts[5].languages[LocalizationManager.Instance.localeIndex].dialogues[0];
             ApplyHoverOnlyState(fillWeaponAmmoButton, false);
         }
         else
@@ -281,7 +281,7 @@ public class ShopUI : MonoBehaviour
         }
         else
         {
-            equipWeaponButton.GetComponentInChildren<TextMeshProUGUI>().text = "EQUIP";
+            equipWeaponButton.GetComponentInChildren<TextMeshProUGUI>().text = InGameUIManager.Instance.dialogueUI.shopMenuButtonTexts[2].languages[LocalizationManager.Instance.localeIndex].dialogues[0];
 
             if(header != PlayerBehaviour.Instance.weaponBehaviour.currentEquippedWeapon)
             {
@@ -312,12 +312,13 @@ public class ShopUI : MonoBehaviour
         else if (weaponBehaviour.ammunitionBackUpSize == weaponBehaviour.ammunitionInBackUp &&
                  weaponBehaviour.ammunitionInClip == weaponBehaviour.maxClipSize)
         {
-            buttonText.text = "AMMO FULL";
+            buttonText.text = InGameUIManager.Instance.dialogueUI.shopMenuButtonTexts[5].languages[LocalizationManager.Instance.localeIndex].dialogues[0];
         }
         else
         {
+            string refillString = InGameUIManager.Instance.dialogueUI.shopMenuButtonTexts[1].languages[LocalizationManager.Instance.localeIndex].dialogues[0];
             bool isFree = TutorialManager.Instance.fillAmmoForFree;
-            buttonText.text = isFree ? "REFILL\nFREE" : $"REFILL\n{fillAmmoCost}";
+            buttonText.text = isFree ? refillString+ "\nFREE" : refillString + $"\n{fillAmmoCost}";
 
             if (isFree || PlayerBehaviour.Instance.playerCurrency.CheckEnoughCurrency(fillAmmoCost))
             {
@@ -340,18 +341,18 @@ public class ShopUI : MonoBehaviour
 
         if (header == "Broken Pistol")
         {
-            upgradeWeaponButton.GetComponentInChildren<TextMeshProUGUI>().text = "NO UPGRADE";
+            upgradeWeaponButton.GetComponentInChildren<TextMeshProUGUI>().text = InGameUIManager.Instance.dialogueUI.shopMenuButtonTexts[6].languages[LocalizationManager.Instance.localeIndex].dialogues[0];
             return;
         }
         //I take a random weapon as a reference of how many upgrades a weapon has, assault rifle in this case
         else if (collectedItemsDictionary[header].weaponObjectSO.upgradeTier >= assaultRifleUpgradeTiers.Length)
         {
-            upgradeWeaponButton.GetComponentInChildren<TextMeshProUGUI>().text = "MAX LEVEL";
+            upgradeWeaponButton.GetComponentInChildren<TextMeshProUGUI>().text = InGameUIManager.Instance.dialogueUI.shopMenuButtonTexts[7].languages[LocalizationManager.Instance.localeIndex].dialogues[0];
             return;
         }
         else
         {
-            upgradeWeaponButton.GetComponentInChildren<TextMeshProUGUI>().text = "UPGRADE" + "\n" + tierCosts[collectedItemsDictionary[header].weaponObjectSO.upgradeTier];
+            upgradeWeaponButton.GetComponentInChildren<TextMeshProUGUI>().text = InGameUIManager.Instance.dialogueUI.shopMenuButtonTexts[3].languages[LocalizationManager.Instance.localeIndex].dialogues[0] + "\n" + tierCosts[collectedItemsDictionary[header].weaponObjectSO.upgradeTier];
         }
  
         if(PlayerBehaviour.Instance.playerCurrency.CheckEnoughCurrency(tierCosts[collectedItemsDictionary[header].weaponObjectSO.upgradeTier]))

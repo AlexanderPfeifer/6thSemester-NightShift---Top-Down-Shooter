@@ -18,8 +18,8 @@ MonoBehaviour:
   shootDelay: 0.4
   clipSize: 16
   reloadTime: 1
-  weaponDescription: "Peggy:\nOh, my favorite one! Don\u2019t let the cool design
-    fool you, sweetums\u2026 this thing is packing heat."
+  weaponDescription: "Peggy:\nCool design, ain\u2019t it? No no, don\u2019t let it
+    fool you, lone ranger\u2026 this thing is packing heat."
   weaponAbilityDescription: Special ability freezes enemies on bullet collision for
     5 seconds.
   playerKnockBack: 4

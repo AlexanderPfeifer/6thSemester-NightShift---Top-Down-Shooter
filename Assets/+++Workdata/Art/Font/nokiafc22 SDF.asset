@@ -2414,8 +2414,9 @@ MonoBehaviour:
     m_MarkToMarkAdjustmentRecords: []
   m_ShouldReimportFontFeatures: 0
   m_FallbackFontAssetTable:
-  - {fileID: 11400000, guid: 0faf51b565cce274d95c13d26efe1a86, type: 2}
+  - {fileID: 11400000, guid: 14ef5fd20c0f05840aa3f71ee7753f3d, type: 2}
   - {fileID: 11400000, guid: 2733323f5df15794a8d512a7ca8f9e8f, type: 2}
+  - {fileID: 11400000, guid: 0faf51b565cce274d95c13d26efe1a86, type: 2}
   m_FontWeightTable:
   - regularTypeface: {fileID: 0}
     italicTypeface: {fileID: 0}
@@ -2482,7 +2483,7 @@ Texture2D:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
   m_IsAlphaChannelOptional: 0
-  serializedVersion: 3
+  serializedVersion: 4
   m_Width: 512
   m_Height: 512
   m_CompleteImageSize: 262144

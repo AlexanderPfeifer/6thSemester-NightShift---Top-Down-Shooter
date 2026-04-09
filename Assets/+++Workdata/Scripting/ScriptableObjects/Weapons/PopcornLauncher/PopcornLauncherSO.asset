@@ -18,8 +18,8 @@ MonoBehaviour:
   shootDelay: 0.7
   clipSize: 9
   reloadTime: 1.5
-  weaponDescription: "Peggy:\n\u201CA buttery-smooth trigger, poppin\u2019 loud and
-    clear\u2026 let\u2019s give them critters a popcorn-worthy show!\u201D"
+  weaponDescription: "Peggy:\nA buttery-smooth trigger, poppin\u2019 loud and clear\u2026
+    let\u2019s give them critters a popcorn-worthy show!"
   weaponAbilityDescription: 
   playerKnockBack: 2.5
   enemyKnockBackPerBullet: 2

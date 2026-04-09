@@ -18,8 +18,8 @@ MonoBehaviour:
   shootDelay: 0.75
   clipSize: 11
   reloadTime: 1.6
-  weaponDescription: "Peggy:\nTell those beasts to suck it! \u2026Try to ignore how
-    sticky the grip is."
+  weaponDescription: "Peggy:\nTell those beasts to suck it! This gun will stick with
+    you \u2018til the very end, tootsie."
   weaponAbilityDescription: When activating your special ability on this one, bullets
     stick to enemies and deal damage over time.
   playerKnockBack: 6

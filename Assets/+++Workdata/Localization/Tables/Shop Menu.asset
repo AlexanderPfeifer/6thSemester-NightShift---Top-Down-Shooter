@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Shop Menu
+  m_EditorClassIdentifier: Unity.Localization.Editor::UnityEditor.Localization.StringTableCollection
+  m_SharedTableData: {fileID: 11400000, guid: 81e787bf2a688c348a18fc3faf55194a, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: bfa163d393246c345a1b96577d70f4d8, type: 2}
+  - {fileID: 11400000, guid: 9603f3024a225ce42915417d36fb1383, type: 2}
+  - {fileID: 11400000, guid: 9cbaf406f3be92c44b96563c26dc602e, type: 2}
+  - {fileID: 11400000, guid: 57d24ab9a6cbcee4b9d02e8aadc3f482, type: 2}
+  - {fileID: 11400000, guid: de47513a0cbdd7242a6b469518b7c500, type: 2}
+  - {fileID: 11400000, guid: ec8c4bc7c99bead4b89c91195fdb26c4, type: 2}
+  - {fileID: 11400000, guid: c5ce9023a61f1b14585ae9fc35ee7688, type: 2}
+  - {fileID: 11400000, guid: 5d468a77432282c4da04e222e63f2cc0, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds: []
