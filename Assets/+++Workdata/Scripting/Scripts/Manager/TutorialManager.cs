@@ -25,12 +25,12 @@ public class TutorialManager : SingletonPersistent<TutorialManager>
     private bool toldAboutAmmoRefill;
 
     [Header("QuestLogTexts")]
-    [SerializeField] private string[] shootAllSignsTranslated;
-    [SerializeField] private string[] fillAmmoTranslated;
-    [SerializeField] private string[] activateGenTranslated;
-    [SerializeField] public string[] activateRideTranslated;
-    [SerializeField] private string[] doYourJobTranslated;
-    public string[] getNewWeaponsTranslated;
+    [SerializeField, TextArea] private string[] shootAllSignsTranslated;
+    [SerializeField, TextArea] private string[] fillAmmoTranslated;
+    [SerializeField, TextArea] private string[] activateGenTranslated;
+    [SerializeField, TextArea] public string[] activateRideTranslated;
+    [SerializeField, TextArea] private string[] doYourJobTranslated;
+    [TextArea] public string[] getNewWeaponsTranslated;
 
     [Header("Dialogue")] 
     [HideInInspector] public bool isExplainingCurrencyDialogue;

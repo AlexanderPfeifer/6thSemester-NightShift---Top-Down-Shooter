@@ -115,7 +115,12 @@ public class FortuneWheelUI : MonoBehaviour
         }
 
         InGameUIManager.Instance.inGameUICanvasGroup.interactable = true;
-        
+
+        var spinButton = firstFortuneWheelButtonSelected.GetComponent<Button>();
+        var spinButtonColor = spinButton.colors;
+        spinButtonColor.normalColor = spinButtonColor.selectedColor;
+        spinButton.colors = spinButtonColor;
+
         receivingPrize = false;
 
         prizes[priceIndex]?.Invoke();
@@ -174,7 +179,7 @@ public class FortuneWheelUI : MonoBehaviour
 
     public void WinBlank()
     {
-        StartCoroutine(InGameUIManager.Instance.dialogueUI.TypeTextCoroutine(InGameUIManager.Instance.dialogueUI.fortuneWheelDialogues[0].languages[LocalizationManager.Instance.localeIndex].dialogues[LocalizationManager.Instance.localeIndex], null, InGameUIManager.Instance.dialogueUI.currentTextBox));
+        StartCoroutine(InGameUIManager.Instance.dialogueUI.TypeTextCoroutine(InGameUIManager.Instance.dialogueUI.fortuneWheelDialogues[0].languages[LocalizationManager.Instance.localeIndex].dialogues[0], null, InGameUIManager.Instance.dialogueUI.currentTextBox));
         
         AudioManager.Instance.Play("Blank");
     }   

@@ -62,7 +62,10 @@ public class InGameUIManager : Singleton<InGameUIManager>
     public void SetWalkieTalkieQuestLog(string text)
     {
         if(!TutorialManager.Instance.tutorialDone)
-            StartCoroutine(dialogueUI.TypeTextCoroutine(text, null, walkieTalkieQuestLog));
+        {
+            walkieTalkieQuestLog.text = text;
+        }
+        //StartCoroutine(dialogueUI.TypeTextCoroutine(text, null, walkieTalkieQuestLog));
     }
     
     public void GoToMainMenu()
