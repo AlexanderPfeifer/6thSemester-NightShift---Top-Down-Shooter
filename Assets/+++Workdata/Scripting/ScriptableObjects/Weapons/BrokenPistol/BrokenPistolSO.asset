@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Broken Pistol
   weaponNameTranslated:
-  - "\u542F\u52A8\u65CB\u8F6C\u6728\u9A6C"
-  - Activate the caroussel
-  - Pommes AR
-  - Attiva la giostra
-  - "\u30E1\u30EA\u30FC\u30B4\u30FC\u30E9\u30F3\u30C9\u3092\u8D77\u52D5\u3057\u308D"
-  - Ative o carrossel
-  - "\u0410\u043A\u0442\u0438\u0432\u0438\u0440\u0443\u0439 \u043A\u0430\u0440\u0443\u0441\u0435\u043B\u044C"
-  - Activa el carrusel
+  - "\u7834\u635F\u624B\u67AA"
+  - Broken Pistol
+  - Defekte Pistole
+  - Pistola rotta
+  - "\u58CA\u308C\u305F\u30D4\u30B9\u30C8\u30EB"
+  - Pistola quebrada
+  - "\u0421\u043B\u043E\u043C\u0430\u043D\u043D\u044B\u0439 \u043F\u0438\u0441\u0442\u043E\u043B\u0435\u0442"
+  - Pistola rota
   upgradeTier: 0
   bulletDamage: 1
   shootDelay: 0.8
@@ -29,9 +29,34 @@ MonoBehaviour:
   reloadTime: 1.5
   weaponDescription: "Peggy:\nAh, the Broken Pistol. Our boss told me I should donate
     it to a museum, but I am too attached to it\u2026"
-  weaponDescriptionTranslated: []
+  weaponDescriptionTranslated:
+  - "\u4F69\u5409\uFF1A\n\u554A\uFF0C\u7834\u635F\u624B\u67AA\u3002\u8001\u677F\u8BA9\u6211\u628A\u5B83\u6350\u7ED9\u535A\u7269\u9986\uFF0C\u4F46\u6211\u5B9E\u5728\u820D\u4E0D\u5F97\u2026\u2026"
+  - "Peggy:\nAh, the Broken Pistol. Our boss told me I should donate it to a museum,
+    but I am too attached to it\u2026"
+  - "Peggy:\nAh, die Defekte Pistole. Unser Boss meinte, ich sollte sie einem Museum
+    spenden, aber ich h\xE4nge zu sehr an ihr\u2026"
+  - "Peggy:\nAh, la Pistola rotta. Il capo mi ha detto di donarla a un museo, ma
+    ci sono troppo affezionata\u2026"
+  - "\u30DA\u30AE\u30FC\uFF1A\n\u3042\u3042\u3001\u305D\u306E\u58CA\u308C\u305F\u30D4\u30B9\u30C8\u30EB\u306D\u3002\u30DC\u30B9\u306F\u535A\u7269\u9928\u306B\u5BC4\u4ED8\u3057\u308D\u3063\u3066\u8A00\u3063\u305F\u3051\u3069\u3001\u624B\u653E\u305B\u306A\u304F\u3066\u306D\u2026\u2026"
+  - "Peggy:\nAh, a Pistola quebrada. O chefe disse que eu devia do\xE1-la a um museu,
+    mas sou muito apegada a ela\u2026"
+  - "\u041F\u0435\u0433\u0433\u0438:\n\u0410\u0445, \u0421\u043B\u043E\u043C\u0430\u043D\u043D\u044B\u0439
+    \u043F\u0438\u0441\u0442\u043E\u043B\u0435\u0442. \u0411\u043E\u0441\u0441 \u0433\u043E\u0432\u043E\u0440\u0438\u043B,
+    \u0447\u0442\u043E \u0435\u0433\u043E \u0441\u0442\u043E\u0438\u0442 \u043E\u0442\u0434\u0430\u0442\u044C
+    \u0432 \u043C\u0443\u0437\u0435\u0439, \u043D\u043E \u044F \u0441\u043B\u0438\u0448\u043A\u043E\u043C
+    \u043A \u043D\u0435\u043C\u0443 \u043F\u0440\u0438\u0432\u044F\u0437\u0430\u043D\u0430\u2026"
+  - "Peggy:\nAh, la Pistola rota. Nuestro jefe me dijo que deber\xEDa donarla a un
+    museo, pero le tengo demasiado cari\xF1o\u2026"
   weaponAbilityDescription: 
-  weaponAbilityDescriptionTranslated: []
+  weaponAbilityDescriptionTranslated:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   playerKnockBack: 2.5
   enemyKnockBackPerBullet: 4
   bulletsPerShot: 1

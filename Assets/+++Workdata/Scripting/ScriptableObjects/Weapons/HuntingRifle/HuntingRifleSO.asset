@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Corn Dog Hunting Rifle
   weaponNameTranslated:
-  - "\u542F\u52A8\u65CB\u8F6C\u6728\u9A6C"
-  - Activate the caroussel
-  - Pommes AR
-  - Attiva la giostra
-  - "\u30E1\u30EA\u30FC\u30B4\u30FC\u30E9\u30F3\u30C9\u3092\u8D77\u52D5\u3057\u308D"
-  - Ative o carrossel
-  - "\u0410\u043A\u0442\u0438\u0432\u0438\u0440\u0443\u0439 \u043A\u0430\u0440\u0443\u0441\u0435\u043B\u044C"
-  - Activa el carrusel
+  - "\u7389\u7C73\u70ED\u72D7\u730E\u67AA"
+  - Corn Dog Hunting Rifle
+  - Corn Dog Jagdgewehr
+  - Fucile da caccia Corn Dog
+  - "\u30B3\u30FC\u30F3\u30C9\u30C3\u30B0\u72E9\u731F\u30E9\u30A4\u30D5\u30EB"
+  - "Rifle de ca\xE7a Corn Dog"
+  - "\u041E\u0445\u043E\u0442\u043D\u0438\u0447\u044C\u044F \u0432\u0438\u043D\u0442\u043E\u0432\u043A\u0430
+    \xAB\u041A\u043E\u0440\u043D-\u0434\u043E\u0433\xBB"
+  - Rifle de caza Corn Dog
   upgradeTier: 0
   bulletDamage: 10
   shootDelay: 0.75
@@ -29,9 +30,33 @@ MonoBehaviour:
   reloadTime: 2.8
   weaponDescription: "Peggy:\nI\u2019m sure there are a lot of corny one-liners you
     can come up with for this one. Ha!"
-  weaponDescriptionTranslated: []
+  weaponDescriptionTranslated:
+  - "\u4F69\u5409\uFF1A\n\u6211\u6562\u8BF4\u4F60\u80FD\u60F3\u51FA\u4E0D\u5C11\u201C\u8001\u5957\u53C8\u7389\u7C73\u5473\u201D\u7684\u7B11\u8BDD\u3002\u54C8\uFF01"
+  - "Peggy:\nI\u2019m sure there are a lot of corny one-liners you can come up with
+    for this one. Ha!"
+  - "Peggy:\nDa fallen dir bestimmt jede Menge \u201Ek\xF6rnige\u201C Spr\xFCche
+    ein. Ha!"
+  - "Peggy:\nSono sicura che ti verranno in mente un sacco di battute \u201Cbanali\u201D
+    con questa. Ha!"
+  - "\u30DA\u30AE\u30FC\uFF1A\n\u3053\u308C\u306A\u3089\u201C\u30B3\u30FC\u30F3\u201D\u3068\u3057\u305F\u5BD2\u3044\u30B8\u30E7\u30FC\u30AF\u304C\u3044\u3063\u3071\u3044\u601D\u3044\u3064\u304D\u305D\u3046\u306D\u3002\u306F\u306F\uFF01"
+  - "Peggy:\nTenho certeza de que voc\xEA consegue mandar v\xE1rias piadas \u201Ccafonas\u201D
+    com essa. Ha!"
+  - "\u041F\u0435\u0433\u0433\u0438:\n\u0423\u0432\u0435\u0440\u0435\u043D\u0430,
+    \u0442\u044B \u043F\u0440\u0438\u0434\u0443\u043C\u0430\u0435\u0448\u044C \u043A\u0443\u0447\u0443
+    \u201C\u043A\u0443\u043A\u0443\u0440\u0443\u0437\u043D\u044B\u0445\u201D \u0448\u0443\u0442\u043E\u0447\u0435\u043A
+    \u0441 \u044D\u0442\u0438\u043C. \u0425\u0430!"
+  - "Peggy:\nSeguro que puedes soltar un mont\xF3n de frases \u201Ccursis\u201D con
+    esta. \xA1Ja!"
   weaponAbilityDescription: 
-  weaponAbilityDescriptionTranslated: []
+  weaponAbilityDescriptionTranslated:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   playerKnockBack: 5
   enemyKnockBackPerBullet: 15
   bulletsPerShot: 1

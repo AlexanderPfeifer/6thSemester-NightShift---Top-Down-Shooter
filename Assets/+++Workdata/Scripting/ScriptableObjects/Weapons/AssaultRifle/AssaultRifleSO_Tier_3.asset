@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: French Fries AR
   weaponNameTranslated:
-  - "\u542F\u52A8\u65CB\u8F6C\u6728\u9A6C"
-  - Activate the caroussel
+  - "\u85AF\u6761 AR"
+  - French Fries AR
   - Pommes AR
-  - Attiva la giostra
-  - "\u30E1\u30EA\u30FC\u30B4\u30FC\u30E9\u30F3\u30C9\u3092\u8D77\u52D5\u3057\u308D"
-  - Ative o carrossel
-  - "\u0410\u043A\u0442\u0438\u0432\u0438\u0440\u0443\u0439 \u043A\u0430\u0440\u0443\u0441\u0435\u043B\u044C"
-  - Activa el carrusel
+  - Patatine AR
+  - "\u30D5\u30E9\u30A4\u30C9\u30DD\u30C6\u30C8 AR"
+  - Batata Frita AR
+  - "\u041A\u0430\u0440\u0442\u043E\u0448\u043A\u0430 \u0424\u0440\u0438 AR"
+  - Patatas Fritas AR
   upgradeTier: 3
   bulletDamage: 6
   shootDelay: 0.1
@@ -29,10 +29,42 @@ MonoBehaviour:
   reloadTime: 1
   weaponDescription: "Peggy:\nA fry-ghtening display, this thing. This\u2019ll get
     \u2018em salty in no time."
-  weaponDescriptionTranslated: []
+  weaponDescriptionTranslated:
+  - "\u4F69\u5409\uFF1A\n\u8FD9\u73A9\u610F\u513F\u771F\u662F\u201C\u70B8\u201D\u5F97\u5413\u4EBA\u3002\u5F88\u5FEB\u5C31\u80FD\u628A\u5B83\u4EEC\u6574\u5F97\u53C8\u54B8\u53C8\u706B\u5927\u3002\u6FC0\u6D3B\u7279\u6B8A\u80FD\u529B\u65F6\uFF0C\u4F60\u7684\u5C04\u901F\u4F1A\u5927\u5E45\u63D0\u5347\u3002"
+  - "Peggy:\nA fry-ghtening display, this thing. This\u2019ll get \u2018em salty
+    in no time."
+  - "Peggy:\nEin echt \"frittierender\" Anblick, das Ding. Damit werden sie im Nu
+    sch\xF6n salzig."
+  - "Peggy:\nUno spettacolo davvero \u201Cfritto da paura\u201D, questo affare. Li
+    far\xE0 diventare salati in un attimo. Quando attivi l\u2019abilit\xE0 speciale,
+    la cadenza di fuoco aumenta molto."
+  - "\u30DA\u30AE\u30FC\uFF1A\n\u306A\u304B\u306A\u304B\u201C\u30A2\u30B2\u30A2\u30B2\u201D\u3067\u30E4\u30D0\u3044\u898B\u305F\u76EE\u306D\u3002\u3059\u3050\u306B\u30A4\u30E9\u30A4\u30E9\u3055\u305B\u3061\u3083\u3046\u308F\u3088\u3002\u7279\u6B8A\u80FD\u529B\u3092\u767A\u52D5\u3059\u308B\u3068\u3001\u9023\u5C04\u901F\u5EA6\u304C\u5927\u304D\u304F\u4E0A\u304C\u308B\u308F\u3002"
+  - "Peggy:\nUm espet\xE1culo bem \u201Cfritador\u201D, esse neg\xF3cio. Vai deix\xE1-los
+    salgadinhos rapidinho. Ao ativar sua habilidade especial, sua cad\xEAncia de
+    tiro aumenta bastante."
+  - "\u041F\u0435\u0433\u0433\u0438:\n\u041F\u0440\u044F\u043C\u043E \u201C\u0436\u0430\u0440\u043A\u043E\u0435\u201D
+    \u0437\u0440\u0435\u043B\u0438\u0449\u0435, \u0430? \u0411\u044B\u0441\u0442\u0440\u043E
+    \u0437\u0430\u0441\u0442\u0430\u0432\u0438\u0442 \u0438\u0445 \u0437\u0430\u043A\u0438\u043F\u0435\u0442\u044C
+    \u0438 \u0441\u0442\u0430\u0442\u044C \u0441\u043E\u043B\u0451\u043D\u044B\u043C\u0438.
+    \u041F\u0440\u0438 \u0430\u043A\u0442\u0438\u0432\u0430\u0446\u0438\u0438 \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u0438
+    \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0440\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C
+    \u0437\u043D\u0430\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u043E \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442\u0441\u044F."
+  - "Peggy:\nUn espect\xE1culo bien \u201Cfritante\u201D, este cacharro. Los dejar\xE1
+    bien salados en un momento. Al activar tu habilidad especial, tu cadencia de
+    fuego aumenta mucho."
   weaponAbilityDescription: When activating your special ability, your firerate greatly
     increases.
-  weaponAbilityDescriptionTranslated: []
+  weaponAbilityDescriptionTranslated:
+  - "\u6FC0\u6D3B\u7279\u6B8A\u80FD\u529B\u65F6\uFF0C\u4F60\u7684\u5C04\u901F\u4F1A\u5927\u5E45\u63D0\u5347\u3002"
+  - When activating your special ability, your firerate greatly increases.
+  - "Beim Aktivieren deiner Spezialf\xE4higkeit erh\xF6ht sich deine Feuerrate stark."
+  - "Quando attivi l\u2019abilit\xE0 speciale, la cadenza di fuoco aumenta notevolmente."
+  - "\u7279\u6B8A\u80FD\u529B\u3092\u767A\u52D5\u3059\u308B\u3068\u3001\u9023\u5C04\u901F\u5EA6\u304C\u5927\u5E45\u306B\u4E0A\u304C\u308B\u308F\u3002"
+  - "Ao ativar sua habilidade especial, sua cad\xEAncia de tiro aumenta bastante."
+  - "\u041F\u0440\u0438 \u0430\u043A\u0442\u0438\u0432\u0430\u0446\u0438\u0438 \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u0438
+    \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0440\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C
+    \u0437\u043D\u0430\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u043E \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442\u0441\u044F."
+  - Al activar tu habilidad especial, tu cadencia de fuego aumenta mucho.
   playerKnockBack: 2
   enemyKnockBackPerBullet: 4
   bulletsPerShot: 1

@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59bfe808e7dd244fbdf92a6c7cab6b3, type: 3}
   m_Name: MagnumSO_Tier_1
   m_EditorClassIdentifier: 
-  weaponName: Magnum magnum
+  weaponName: Magnum Magnum
   weaponNameTranslated:
-  - "\u542F\u52A8\u65CB\u8F6C\u6728\u9A6C"
-  - Activate the caroussel
-  - Pommes AR
-  - Attiva la giostra
-  - "\u30E1\u30EA\u30FC\u30B4\u30FC\u30E9\u30F3\u30C9\u3092\u8D77\u52D5\u3057\u308D"
-  - Ative o carrossel
+  - "\u9A6C\u683C\u5357\u9A6C\u683C\u5357"
+  - Magnum Magnum
+  - Magnum Magnum
+  - Magnum Magnum
+  - "\u30DE\u30B0\u30CA\u30E0\u30DE\u30B0\u30CA\u30E0"
+  - "\u041C\u0430\u0433\u043D\u0443\u043C \u041C\u0430\u0433\u043D\u0443\u043C"
   - "\u0410\u043A\u0442\u0438\u0432\u0438\u0440\u0443\u0439 \u043A\u0430\u0440\u0443\u0441\u0435\u043B\u044C"
-  - Activa el carrusel
+  - Magnum Magnum
   upgradeTier: 1
   bulletDamage: 7
   shootDelay: 0.8
@@ -29,9 +29,34 @@ MonoBehaviour:
   reloadTime: 1.6
   weaponDescription: "Peggy:\nCool design, ain\u2019t it? No no, don\u2019t let it
     fool you, lone ranger\u2026 this thing is packing heat."
-  weaponDescriptionTranslated: []
+  weaponDescriptionTranslated:
+  - "\u4F69\u5409\uFF1A\n\u8BBE\u8BA1\u5F88\u9177\uFF0C\u5BF9\u5427\uFF1F\u522B\u88AB\u5B83\u9A97\u4E86\uFF0C\u72EC\u884C\u4FA0\u2026\u2026\u8FD9\u5BB6\u4F19\u706B\u529B\u5341\u8DB3\u3002"
+  - "Peggy:\nCool design, ain\u2019t it? No no, don\u2019t let it fool you, lone
+    ranger\u2026 this thing is packing heat."
+  - "Cooles Design, oder? Nein, nein, lass dich nicht t\xE4uschen, einsamer Ranger\u2026
+    das Ding hat ordentlich Hitze drauf."
+  - "Peggy:\nBel design, vero? No, no, non farti ingannare, ranger solitario\u2026
+    questo affare \xE8 bello potente."
+  - "\u30DA\u30AE\u30FC\uFF1A\n\u3044\u3044\u30C7\u30B6\u30A4\u30F3\u3067\u3057\u3087\uFF1F\u3067\u3082\u6CB9\u65AD\u3057\u306A\u3044\u3067\u3001\u5B64\u9AD8\u306E\u30AC\u30F3\u30DE\u30F3\u2026\u2026\u3053\u3044\u3064\u306F\u304B\u306A\u308A\u706B\u529B\u304C\u3042\u308B\u308F\u3088\u3002"
+  - "Peggy:\nDesign legal, n\xE3o \xE9? N\xE3o se deixe enganar, lobo solit\xE1rio\u2026
+    isso aqui tem fogo."
+  - "\u041F\u0435\u0433\u0433\u0438:\n\u041A\u0440\u0443\u0442\u043E\u0439 \u0434\u0438\u0437\u0430\u0439\u043D,
+    \u043F\u0440\u0430\u0432\u0434\u0430? \u041D\u043E \u043D\u0435 \u0434\u0430\u0439
+    \u0441\u0435\u0431\u044F \u043E\u0431\u043C\u0430\u043D\u0443\u0442\u044C, \u043E\u0434\u0438\u043D\u043E\u043A\u0438\u0439
+    \u0440\u0435\u0439\u043D\u0434\u0436\u0435\u0440\u2026 \u044D\u0442\u0430 \u0448\u0442\u0443\u043A\u0430
+    \u0440\u0435\u0430\u043B\u044C\u043D\u043E \u0436\u0430\u0440\u0438\u0442."
+  - "Peggy:\nBonito dise\xF1o, \xBFverdad? No te dejes enga\xF1ar, llanero solitario\u2026
+    este cacharro tiene mucha potencia."
   weaponAbilityDescription: 
-  weaponAbilityDescriptionTranslated: []
+  weaponAbilityDescriptionTranslated:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   playerKnockBack: 4
   enemyKnockBackPerBullet: 10
   bulletsPerShot: 1
