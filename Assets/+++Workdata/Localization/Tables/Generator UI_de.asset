@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Generator UI_de
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: ead4e3839fc56b548bdca60d94b74898, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 33885880320
+    m_Localized: HOCHSPANNUNG!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73970843648
+    m_Localized: "System ben\xF6tigt mindestens 600 kW zum Starten"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75937972224
+    m_Localized: ENERGIE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78857207808
+    m_Localized: SICHERUNGEN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80308436992
+    m_Localized: Haupt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81159880704
+    m_Localized: Lichter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82640470016
+    m_Localized: Steuerung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84045561856
+    m_Localized: Prim. Antrieb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85853306880
+    m_Localized: Sek. Antrieb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99690315776
+    m_Localized: Lautsprecher
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

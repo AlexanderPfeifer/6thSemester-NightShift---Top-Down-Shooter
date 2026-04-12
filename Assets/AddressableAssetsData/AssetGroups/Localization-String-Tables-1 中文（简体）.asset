@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: "Localization-String-Tables-1 \u4E2D\u6587\uFF08\u7B80\u4F53\uFF09"
   m_GUID: 1cc7537137741ff449389baac9751854
   m_SerializeEntries:
+  - m_GUID: 1f387f757838a804193cd95bfcb4cd8f
+    m_Address: Generator UI_zh-Hans
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bfa163d393246c345a1b96577d70f4d8
     m_Address: Shop Menu_zh-Hans
     m_ReadOnly: 1

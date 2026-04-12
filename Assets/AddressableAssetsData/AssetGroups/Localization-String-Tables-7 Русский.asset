@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: "Localization-String-Tables-7 \u0420\u0443\u0441\u0441\u043A\u0438\u0439"
   m_GUID: b6fb486bd3e7efa418bdf39ce907b8a3
   m_SerializeEntries:
+  - m_GUID: c0eab293c03fa86428e1df215e506434
+    m_Address: Generator UI_ru
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c5ce9023a61f1b14585ae9fc35ee7688
     m_Address: Shop Menu_ru
     m_ReadOnly: 1

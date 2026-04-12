@@ -30,6 +30,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ead4e3839fc56b548bdca60d94b74898
+    m_Address: Assets/+++Workdata/Localization/Tables/Generator UI Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 03e0c08e9592d5946b66963b9e9d6982, type: 2}
   m_SchemaSet:

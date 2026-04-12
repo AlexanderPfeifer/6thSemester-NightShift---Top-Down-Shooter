@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: "Localization-String-Tables-6 Portugu\xEAs (Brasil)"
   m_GUID: 49bdde2b05edaf645bc5c3fd81a63cbe
   m_SerializeEntries:
+  - m_GUID: 9b8ddbccff5ae984e91e5a89be808082
+    m_Address: Generator UI_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ec8c4bc7c99bead4b89c91195fdb26c4
     m_Address: Shop Menu_pt-BR
     m_ReadOnly: 1
