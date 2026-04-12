@@ -88,7 +88,7 @@ public class ShopUI : MonoBehaviour
 
     public void UpgradeWeapon(WeaponObjectSO weapon)
     {
-        WeaponObjectSO[] _upgradeTiers = weapon.weaponName switch
+        WeaponObjectSO[] _upgradeTiers = weapon.weaponIdentifier switch
         {
             "Magnum magnum" => magnumMagnumUpgradeTiers,
             "French Fries AR" => assaultRifleUpgradeTiers,
@@ -112,7 +112,7 @@ public class ShopUI : MonoBehaviour
                 PlayerBehaviour.Instance.weaponBehaviour.GetWeapon(PlayerBehaviour.Instance.weaponBehaviour.allWeaponPrizes[_i]);
                 foreach (var _selected in selectionWindows)
                 {
-                    if (_selected == PlayerBehaviour.Instance.weaponBehaviour.allWeaponPrizes[_i].weaponName)
+                    if (_selected == PlayerBehaviour.Instance.weaponBehaviour.allWeaponPrizes[_i].weaponIdentifier)
                     {
                         int _index = System.Array.IndexOf(selectionWindows, _selected);
                         DisplayWeaponWindowOverride(_index);
@@ -147,7 +147,7 @@ public class ShopUI : MonoBehaviour
 
     private void EquipNewWeapon(WeaponObjectSO weaponObjectSO)
     {
-        if (PlayerBehaviour.Instance.weaponBehaviour.currentEquippedWeapon != weaponObjectSO.weaponName)
+        if (PlayerBehaviour.Instance.weaponBehaviour.currentEquippedWeapon != weaponObjectSO.weaponIdentifier)
         {
             AudioManager.Instance.Play("Equip");
             PlayerBehaviour.Instance.weaponBehaviour.GetWeapon(weaponObjectSO);
@@ -197,7 +197,7 @@ public class ShopUI : MonoBehaviour
         
         if (!collectedItemsDictionary.TryGetValue(header, out _))
         {
-            descriptionImage.sprite = PlayerBehaviour.Instance.weaponBehaviour.allWeaponPrizes.FirstOrDefault(w => w.weaponName == header)?.uiWeaponVisual;
+            descriptionImage.sprite = PlayerBehaviour.Instance.weaponBehaviour.allWeaponPrizes.FirstOrDefault(w => w.weaponIdentifier == header)?.uiWeaponVisual;
             descriptionImage.color = Color.black;
             descriptionHeader.text = "???";
             bulletDamageTextField.text = "???";
@@ -403,17 +403,19 @@ public class ShopUI : MonoBehaviour
         foreach (var _identifier in _collectedWeapons)
         {
             var _headerText = "";
+            var _weaponIdentifier = "";
             var _weaponDescription = "";
-            var _weapon = PlayerBehaviour.Instance.weaponBehaviour.allWeaponPrizes.FirstOrDefault(w => w.weaponName == _identifier);
+            var _weapon = PlayerBehaviour.Instance.weaponBehaviour.allWeaponPrizes.FirstOrDefault(w => w.weaponIdentifier == _identifier);
             
             if (_weapon == null)
                 return;
-            
-            _headerText += _weapon.weaponName;
-            _weaponDescription += _weapon.weaponDescription;
+
+            _weaponIdentifier += _weapon.weaponIdentifier;
+            _headerText += _weapon.weaponNameTranslated[LocalizationManager.Instance.localeIndex];
+            _weaponDescription += _weapon.weaponDescriptionTranslated[LocalizationManager.Instance.localeIndex];
             if (_weapon.hasAbilityUpgrade)
             {
-                _weaponDescription += " " + _weapon.weaponAbilityDescription;
+                _weaponDescription += " " + _weapon.weaponAbilityDescriptionTranslated[LocalizationManager.Instance.localeIndex];
             }
             
             var _bulletDamageText = "Bullet" + "\n" + " Power" + "\n" + "\n" + _weapon.bulletDamage;
@@ -423,28 +425,28 @@ public class ShopUI : MonoBehaviour
             
             var _spriteWeapon = _weapon.uiWeaponVisual;
             
-            var _itemIdentifier = _headerText;
+            var _itemIdentifier = _weaponIdentifier;
             
             switch (_itemIdentifier)
             {
                 case "Magnum magnum" :
-                    ActivateInventoryItem((float)_weapon.upgradeTier / 3, _headerText, _spriteWeapon, _weaponDescription, _bulletDamageText, _bulletDelayText, _reloadSpeedText, _clipSizeText, _weapon);
+                    ActivateInventoryItem(_weaponIdentifier, (float)_weapon.upgradeTier / 3, _headerText, _spriteWeapon, _weaponDescription, _bulletDamageText, _bulletDelayText, _reloadSpeedText, _clipSizeText, _weapon);
                     break;
                 case "French Fries AR" :
-                    ActivateInventoryItem((float)_weapon.upgradeTier / 3, _headerText, _spriteWeapon, _weaponDescription, _bulletDamageText, _bulletDelayText, _reloadSpeedText, _clipSizeText, _weapon);
+                    ActivateInventoryItem(_weaponIdentifier, (float)_weapon.upgradeTier / 3, _headerText, _spriteWeapon, _weaponDescription, _bulletDamageText, _bulletDelayText, _reloadSpeedText, _clipSizeText, _weapon);
                     break;
                 case "Lollipop Shotgun" :
-                    ActivateInventoryItem((float)_weapon.upgradeTier / 3, _headerText, _spriteWeapon, _weaponDescription, _bulletDamageText, _bulletDelayText, _reloadSpeedText, _clipSizeText, _weapon);
+                    ActivateInventoryItem(_weaponIdentifier, (float)_weapon.upgradeTier / 3, _headerText, _spriteWeapon, _weaponDescription, _bulletDamageText, _bulletDelayText, _reloadSpeedText, _clipSizeText, _weapon);
                     break;
                 case "Corn Dog Hunting Rifle" :
-                    ActivateInventoryItem((float)_weapon.upgradeTier / 3, _headerText, _spriteWeapon, _weaponDescription, _bulletDamageText, _bulletDelayText, _reloadSpeedText, _clipSizeText, _weapon);
+                    ActivateInventoryItem(_weaponIdentifier, (float)_weapon.upgradeTier / 3, _headerText, _spriteWeapon, _weaponDescription, _bulletDamageText, _bulletDelayText, _reloadSpeedText, _clipSizeText, _weapon);
                     break;
                 case "Popcorn Launcher" :
-                    ActivateInventoryItem((float)_weapon.upgradeTier / 3, _headerText, _spriteWeapon, _weaponDescription, _bulletDamageText, _bulletDelayText, _reloadSpeedText, _clipSizeText, _weapon);
+                    ActivateInventoryItem(_weaponIdentifier, (float)_weapon.upgradeTier / 3, _headerText, _spriteWeapon, _weaponDescription, _bulletDamageText, _bulletDelayText, _reloadSpeedText, _clipSizeText, _weapon);
                     break;
                 case "Broken Pistol" :
-                    ActivateInventoryItem((float)_weapon.upgradeTier / 3, _headerText, _spriteWeapon, _weaponDescription, _bulletDamageText, _bulletDelayText, _reloadSpeedText, _clipSizeText, _weapon);
-                    break;
+                    ActivateInventoryItem(_weaponIdentifier, (float)_weapon.upgradeTier / 3, _headerText, _spriteWeapon, _weaponDescription, _bulletDamageText, _bulletDelayText, _reloadSpeedText, _clipSizeText, _weapon);
+                    break;  
             }
         }
         
@@ -458,8 +460,8 @@ public class ShopUI : MonoBehaviour
         }
     }
     
-    private void ActivateInventoryItem(float levelFill, string headerText, Sprite spriteItem, string weaponDescription, string bulletDamageText, string bulletDelayText, string reloadSpeedText, string  clipSizeText,WeaponObjectSO weaponObjectSO)
+    private void ActivateInventoryItem(string weaponIdentifier, float levelFill, string headerText, Sprite spriteItem, string weaponDescription, string bulletDamageText, string bulletDelayText, string reloadSpeedText, string  clipSizeText,WeaponObjectSO weaponObjectSO)
     {
-        collectedItemsDictionary[headerText] = (levelFill, spriteItem, weaponDescription, headerText, bulletDamageText, bulletDelayText, reloadSpeedText, clipSizeText, weaponObjectSO);
+        collectedItemsDictionary[weaponIdentifier] = (levelFill, spriteItem, weaponDescription, headerText, bulletDamageText, bulletDelayText, reloadSpeedText, clipSizeText, weaponObjectSO);
     }
 }

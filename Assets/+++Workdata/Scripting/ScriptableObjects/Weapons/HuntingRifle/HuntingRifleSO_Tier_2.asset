@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59bfe808e7dd244fbdf92a6c7cab6b3, type: 3}
   m_Name: HuntingRifleSO_Tier_2
   m_EditorClassIdentifier: 
-  weaponName: Corn Dog Hunting Rifle
+  weaponIdentifier: Corn Dog Hunting Rifle
   weaponNameTranslated:
   - "\u7389\u7C73\u70ED\u72D7\u730E\u67AA"
   - Corn Dog Hunting Rifle
@@ -28,8 +28,6 @@ MonoBehaviour:
   shootDelay: 0.6
   clipSize: 5
   reloadTime: 2.1
-  weaponDescription: "Peggy:\nI\u2019m sure there are a lot of corny one-liners you
-    can come up with for this one. Ha!"
   weaponDescriptionTranslated:
   - "\u4F69\u5409\uFF1A\n\u6211\u6562\u8BF4\u4F60\u80FD\u60F3\u51FA\u4E0D\u5C11\u201C\u8001\u5957\u53C8\u7389\u7C73\u5473\u201D\u7684\u7B11\u8BDD\u3002\u54C8\uFF01"
   - "Peggy:\nI\u2019m sure there are a lot of corny one-liners you can come up with
@@ -47,8 +45,6 @@ MonoBehaviour:
     \u0441 \u044D\u0442\u0438\u043C. \u0425\u0430!"
   - "Peggy:\nSeguro que puedes soltar un mont\xF3n de frases \u201Ccursis\u201D con
     esta. \xA1Ja!"
-  weaponAbilityDescription: On Activation of special ability your weapon has no enemy
-    penetration limit and every shot has a chance to triple the incoming damage.
   weaponAbilityDescriptionTranslated:
   - "\u6FC0\u6D3B\u7279\u6B8A\u80FD\u529B\u65F6\uFF0C\u4F60\u7684\u6B66\u5668\u6CA1\u6709\u7A7F\u900F\u9650\u5236\uFF0C\u6BCF\u4E00\u53D1\u5B50\u5F39\u90FD\u6709\u51E0\u7387\u9020\u6210\u4E09\u500D\u4F24\u5BB3\u3002"
   - On Activation of special ability your weapon has no enemy penetration limit and

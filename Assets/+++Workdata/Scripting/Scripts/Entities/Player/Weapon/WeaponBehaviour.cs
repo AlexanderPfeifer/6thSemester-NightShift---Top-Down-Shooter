@@ -97,7 +97,7 @@ public class WeaponBehaviour : MonoBehaviour
 
     private void Awake()
     {
-        foreach (var _weapon in allWeaponPrizes.Where(weapon => GameSaveStateManager.Instance.saveGameDataManager.HasWeaponInInventory(weapon.weaponName)))
+        foreach (var _weapon in allWeaponPrizes.Where(weapon => GameSaveStateManager.Instance.saveGameDataManager.HasWeaponInInventory(weapon.weaponIdentifier)))
         {
             GetWeapon(_weapon);
         }
@@ -188,7 +188,7 @@ public class WeaponBehaviour : MonoBehaviour
 
     public WeaponObjectSO GetCurrentWeaponObjectSO()
     {
-        return PlayerBehaviour.Instance.weaponBehaviour.allWeaponPrizes.FirstOrDefault(w => w.weaponName == currentEquippedWeapon);
+        return PlayerBehaviour.Instance.weaponBehaviour.allWeaponPrizes.FirstOrDefault(w => w.weaponIdentifier == currentEquippedWeapon);
     }
 
     public void CamMovementUpdate()
@@ -414,7 +414,7 @@ public class WeaponBehaviour : MonoBehaviour
         }
 
         this.weapon.SetActive(true);
-        currentEquippedWeapon = weapon.weaponName;
+        currentEquippedWeapon = weapon.weaponIdentifier;
         longRangeWeaponSprite = weapon.inGameWeaponVisual;
         bulletDamage = weapon.bulletDamage;
         maxPenetrationCount = weapon.penetrationCount;
@@ -448,7 +448,7 @@ public class WeaponBehaviour : MonoBehaviour
         inGameUIWeaponVisual.GetComponent<Image>().sprite = weapon.uiWeaponVisual;
         inGameUIWeaponVisual.SetActive(true);
         
-        myWeapon = weapon.weaponName switch
+        myWeapon = weapon.weaponIdentifier switch
         {
             "Magnum magnum" => MyWeapon.Magnum,
             "French Fries AR" => MyWeapon.AssaultRifle,
@@ -458,7 +458,7 @@ public class WeaponBehaviour : MonoBehaviour
             _ => myWeapon
         };
         
-        GameSaveStateManager.Instance.saveGameDataManager.AddWeapon(weapon.weaponName);
+        GameSaveStateManager.Instance.saveGameDataManager.AddWeapon(weapon.weaponIdentifier);
     }
 
     private IEnumerator WeaponVisualCoroutine()

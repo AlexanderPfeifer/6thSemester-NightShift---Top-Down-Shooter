@@ -175,7 +175,7 @@ public class TutorialManager : SingletonPersistent<TutorialManager>
         {
             InGameUIManager.Instance.playerHUD.SetActive(true);
         
-            WeaponObjectSO _brokenPistol = PlayerBehaviour.Instance.weaponBehaviour.allWeaponPrizes.FirstOrDefault(w => w.weaponName == "Broken Pistol");
+            WeaponObjectSO _brokenPistol = PlayerBehaviour.Instance.weaponBehaviour.allWeaponPrizes.FirstOrDefault(w => w.weaponIdentifier == "Broken Pistol");
         
             PlayerBehaviour.Instance.weaponBehaviour.GetWeapon(_brokenPistol);
             PlayerBehaviour.Instance.weaponBehaviour.weaponSlot.SetActive(true);

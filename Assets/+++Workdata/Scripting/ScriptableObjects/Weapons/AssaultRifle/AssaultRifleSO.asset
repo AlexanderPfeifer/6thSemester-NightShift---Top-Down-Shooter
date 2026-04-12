@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59bfe808e7dd244fbdf92a6c7cab6b3, type: 3}
   m_Name: AssaultRifleSO
   m_EditorClassIdentifier: 
-  weaponName: French Fries AR
+  weaponIdentifier: French Fries AR
   weaponNameTranslated:
   - "\u85AF\u6761 AR"
   - French Fries AR
@@ -27,8 +27,6 @@ MonoBehaviour:
   shootDelay: 0.175
   clipSize: 25
   reloadTime: 1.8
-  weaponDescription: "Peggy:\nA fry-ghtening display, this thing. This\u2019ll get
-    \u2018em salty in no time. "
   weaponDescriptionTranslated:
   - "\u4F69\u5409\uFF1A\n\u8FD9\u73A9\u610F\u513F\u771F\u662F\u201C\u70B8\u201D\u5F97\u5413\u4EBA\u3002\u5F88\u5FEB\u5C31\u80FD\u628A\u5B83\u4EEC\u6574\u5F97\u53C8\u54B8\u53C8\u706B\u5927\u3002\u6FC0\u6D3B\u7279\u6B8A\u80FD\u529B\u65F6\uFF0C\u4F60\u7684\u5C04\u901F\u4F1A\u5927\u5E45\u63D0\u5347\u3002"
   - "Peggy:\nA fry-ghtening display, this thing. This\u2019ll get \u2018em salty
@@ -52,7 +50,6 @@ MonoBehaviour:
   - "Peggy:\nUn espect\xE1culo bien \u201Cfritante\u201D, este cacharro. Los dejar\xE1
     bien salados en un momento. Al activar tu habilidad especial, tu cadencia de
     fuego aumenta mucho."
-  weaponAbilityDescription: 
   weaponAbilityDescriptionTranslated:
   - 
   - 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59bfe808e7dd244fbdf92a6c7cab6b3, type: 3}
   m_Name: BrokenPistolSO
   m_EditorClassIdentifier: 
-  weaponName: Broken Pistol
+  weaponIdentifier: Broken Pistol
   weaponNameTranslated:
   - "\u7834\u635F\u624B\u67AA"
   - Broken Pistol
@@ -27,8 +27,6 @@ MonoBehaviour:
   shootDelay: 0.8
   clipSize: 12
   reloadTime: 1.5
-  weaponDescription: "Peggy:\nAh, the Broken Pistol. Our boss told me I should donate
-    it to a museum, but I am too attached to it\u2026"
   weaponDescriptionTranslated:
   - "\u4F69\u5409\uFF1A\n\u554A\uFF0C\u7834\u635F\u624B\u67AA\u3002\u8001\u677F\u8BA9\u6211\u628A\u5B83\u6350\u7ED9\u535A\u7269\u9986\uFF0C\u4F46\u6211\u5B9E\u5728\u820D\u4E0D\u5F97\u2026\u2026"
   - "Peggy:\nAh, the Broken Pistol. Our boss told me I should donate it to a museum,
@@ -47,7 +45,6 @@ MonoBehaviour:
     \u043A \u043D\u0435\u043C\u0443 \u043F\u0440\u0438\u0432\u044F\u0437\u0430\u043D\u0430\u2026"
   - "Peggy:\nAh, la Pistola rota. Nuestro jefe me dijo que deber\xEDa donarla a un
     museo, pero le tengo demasiado cari\xF1o\u2026"
-  weaponAbilityDescription: 
   weaponAbilityDescriptionTranslated:
   - 
   - 

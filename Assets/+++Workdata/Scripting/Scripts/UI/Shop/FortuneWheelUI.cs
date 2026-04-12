@@ -128,7 +128,7 @@ public class FortuneWheelUI : MonoBehaviour
 
     public void WinWeapon(WeaponObjectSO weapon)
     {
-        if (!GameSaveStateManager.Instance.saveGameDataManager.HasWeapon(weapon.weaponName))
+        if (!GameSaveStateManager.Instance.saveGameDataManager.HasWeapon(weapon.weaponIdentifier))
         {
             receivingPrize = true;
 
@@ -159,7 +159,7 @@ public class FortuneWheelUI : MonoBehaviour
 
         weaponImage.sprite = weapon.uiWeaponVisual;
 
-        weaponName.text = weapon.weaponName;
+        weaponName.text = weapon.weaponNameTranslated[LocalizationManager.Instance.localeIndex];
 
         newWeaponAnim.SetBool("NewWeaponScreenActive", true);
 

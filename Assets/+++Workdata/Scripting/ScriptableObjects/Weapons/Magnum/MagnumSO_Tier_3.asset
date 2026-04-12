@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59bfe808e7dd244fbdf92a6c7cab6b3, type: 3}
   m_Name: MagnumSO_Tier_3
   m_EditorClassIdentifier: 
-  weaponName: Magnum Magnum
+  weaponIdentifier: Magnum magnum
   weaponNameTranslated:
   - "\u9A6C\u683C\u5357\u9A6C\u683C\u5357"
   - Magnum Magnum
@@ -27,8 +27,6 @@ MonoBehaviour:
   shootDelay: 0.4
   clipSize: 16
   reloadTime: 1
-  weaponDescription: "Peggy:\nCool design, ain\u2019t it? No no, don\u2019t let it
-    fool you, lone ranger\u2026 this thing is packing heat."
   weaponDescriptionTranslated:
   - "\u4F69\u5409\uFF1A\n\u8BBE\u8BA1\u5F88\u9177\uFF0C\u5BF9\u5427\uFF1F\u522B\u88AB\u5B83\u9A97\u4E86\uFF0C\u72EC\u884C\u4FA0\u2026\u2026\u8FD9\u5BB6\u4F19\u706B\u529B\u5341\u8DB3\u3002"
   - "Peggy:\nCool design, ain\u2019t it? No no, don\u2019t let it fool you, lone
@@ -47,8 +45,6 @@ MonoBehaviour:
     \u0440\u0435\u0430\u043B\u044C\u043D\u043E \u0436\u0430\u0440\u0438\u0442."
   - "Peggy:\nBonito dise\xF1o, \xBFverdad? No te dejes enga\xF1ar, llanero solitario\u2026
     este cacharro tiene mucha potencia."
-  weaponAbilityDescription: Special ability freezes enemies on bullet collision for
-    5 seconds.
   weaponAbilityDescriptionTranslated:
   - "\u7279\u6B8A\u80FD\u529B\u4F1A\u5728\u5B50\u5F39\u547D\u4E2D\u65F6\u51BB\u7ED3\u654C\u4EBA5\u79D2\u3002"
   - Special ability freezes enemies on bullet collision for 5 seconds.

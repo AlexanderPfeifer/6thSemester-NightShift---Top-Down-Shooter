@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59bfe808e7dd244fbdf92a6c7cab6b3, type: 3}
   m_Name: HuntingRifleSO_Tier_1
   m_EditorClassIdentifier: 
-  weaponName: Corn Dog Hunting Rifle
+  weaponIdentifier: Corn Dog Hunting Rifle
   weaponNameTranslated:
   - "\u7389\u7C73\u70ED\u72D7\u730E\u67AA"
   - Corn Dog Hunting Rifle
@@ -28,8 +28,6 @@ MonoBehaviour:
   shootDelay: 0.7
   clipSize: 5
   reloadTime: 2.4
-  weaponDescription: "Peggy:\nI\u2019m sure there are a lot of corny one-liners you
-    can come up with for this one. Ha!"
   weaponDescriptionTranslated:
   - "\u4F69\u5409\uFF1A\n\u6211\u6562\u8BF4\u4F60\u80FD\u60F3\u51FA\u4E0D\u5C11\u201C\u8001\u5957\u53C8\u7389\u7C73\u5473\u201D\u7684\u7B11\u8BDD\u3002\u54C8\uFF01"
   - "Peggy:\nI\u2019m sure there are a lot of corny one-liners you can come up with
@@ -47,7 +45,6 @@ MonoBehaviour:
     \u0441 \u044D\u0442\u0438\u043C. \u0425\u0430!"
   - "Peggy:\nSeguro que puedes soltar un mont\xF3n de frases \u201Ccursis\u201D con
     esta. \xA1Ja!"
-  weaponAbilityDescription: 
   weaponAbilityDescriptionTranslated:
   - 
   - 

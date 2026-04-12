@@ -5,7 +5,7 @@ using UnityEngine.Serialization;
 [CreateAssetMenu]
 public class WeaponObjectSO : ScriptableObject
 {
-    public string weaponName;
+    public string weaponIdentifier;
     [TextArea(3, 10)] public string[] weaponNameTranslated;
 
     [Header("Upgrades")]
@@ -18,9 +18,7 @@ public class WeaponObjectSO : ScriptableObject
     public float reloadTime;
     
     [Header("Descriptions")]
-    [TextArea(3, 10)] public string weaponDescription;
     [TextArea(3, 10)] public string[] weaponDescriptionTranslated;
-    [FormerlySerializedAs("weaponStats")] [TextArea(3, 10)] public string weaponAbilityDescription;
     [TextArea(3, 10)] public string[] weaponAbilityDescriptionTranslated;
 
     [Header("Knock Back")]

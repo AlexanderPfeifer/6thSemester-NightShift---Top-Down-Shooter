@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59bfe808e7dd244fbdf92a6c7cab6b3, type: 3}
   m_Name: ShotgunSO_Tier_3
   m_EditorClassIdentifier: 
-  weaponName: Lollipop Shotgun
+  weaponIdentifier: Lollipop Shotgun
   weaponNameTranslated:
   - "\u68D2\u68D2\u7CD6\u9730\u5F39\u67AA"
   - Lollipop Shotgun
+  - Lutscher-Schrotflinte
   - Fucile a pompa lecca-lecca
-  - Attiva la giostra
   - "\u30ED\u30EA\u30DD\u30C3\u30D7\u30B7\u30E7\u30C3\u30C8\u30AC\u30F3"
   - Espingarda pirulito
   - "\u0414\u0440\u043E\u0431\u043E\u0432\u0438\u043A \xAB\u041B\u0435\u0434\u0435\u043D\u0435\u0446\xBB"
@@ -27,8 +27,6 @@ MonoBehaviour:
   shootDelay: 0.5
   clipSize: 14
   reloadTime: 1
-  weaponDescription: "Peggy:\nTell those beasts to suck it! This gun will stick with
-    you \u2018til the very end, tootsie."
   weaponDescriptionTranslated:
   - "\u4F69\u5409\uFF1A\n\u8BA9\u90A3\u4E9B\u91CE\u517D\u89C1\u9B3C\u53BB\u5427\uFF01\u8FD9\u628A\u67AA\u4F1A\u4E00\u76F4\u201C\u7C98\u201D\u5728\u4F60\u8EAB\u8FB9\u76F4\u5230\u6700\u540E\uFF0C\u4EB2\u7231\u7684\u3002"
   - "Peggy:\nTell those beasts to suck it! This gun will stick with you \u2018til
@@ -48,8 +46,6 @@ MonoBehaviour:
     \u043C\u0438\u043B\u0430\u0448\u043A\u0430."
   - "Peggy:\n\xA1Diles a esas bestias que se aguanten! Esta arma se te va a quedar
     \u201Cpegada\u201D hasta el final, cari\xF1o."
-  weaponAbilityDescription: When activating your special ability on this one, bullets
-    stick to enemies and deal damage over time.
   weaponAbilityDescriptionTranslated:
   - "\u6FC0\u6D3B\u7279\u6B8A\u80FD\u529B\u65F6\uFF0C\u5B50\u5F39\u4F1A\u7C98\u5728\u654C\u4EBA\u8EAB\u4E0A\u5E76\u6301\u7EED\u9020\u6210\u4F24\u5BB3\u3002"
   - When activating your special ability on this one, bullets stick to enemies and
