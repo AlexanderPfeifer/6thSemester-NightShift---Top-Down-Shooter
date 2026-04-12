@@ -6,7 +6,8 @@ using UnityEngine.Serialization;
 public class WeaponObjectSO : ScriptableObject
 {
     public string weaponName;
-    
+    [TextArea(3, 10)] public string[] weaponNameTranslated;
+
     [Header("Upgrades")]
     public int upgradeTier;
     
@@ -18,8 +19,10 @@ public class WeaponObjectSO : ScriptableObject
     
     [Header("Descriptions")]
     [TextArea(3, 10)] public string weaponDescription;
+    [TextArea(3, 10)] public string[] weaponDescriptionTranslated;
     [FormerlySerializedAs("weaponStats")] [TextArea(3, 10)] public string weaponAbilityDescription;
-    
+    [TextArea(3, 10)] public string[] weaponAbilityDescriptionTranslated;
+
     [Header("Knock Back")]
     [FormerlySerializedAs("knockBack")] public float playerKnockBack;
     [FormerlySerializedAs("enemyKnockBack")] public float enemyKnockBackPerBullet;

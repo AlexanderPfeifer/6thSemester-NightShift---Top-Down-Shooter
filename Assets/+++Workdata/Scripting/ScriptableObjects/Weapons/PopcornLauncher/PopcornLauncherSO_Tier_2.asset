@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: PopcornLauncherSO_Tier_2
   m_EditorClassIdentifier: 
   weaponName: Popcorn Launcher
+  weaponNameTranslated:
+  - "\u542F\u52A8\u65CB\u8F6C\u6728\u9A6C"
+  - Activate the caroussel
+  - Pommes AR
+  - Attiva la giostra
+  - "\u30E1\u30EA\u30FC\u30B4\u30FC\u30E9\u30F3\u30C9\u3092\u8D77\u52D5\u3057\u308D"
+  - Ative o carrossel
+  - "\u0410\u043A\u0442\u0438\u0432\u0438\u0440\u0443\u0439 \u043A\u0430\u0440\u0443\u0441\u0435\u043B\u044C"
+  - Activa el carrusel
   upgradeTier: 2
   bulletDamage: 5
   shootDelay: 0.5
@@ -20,8 +29,10 @@ MonoBehaviour:
   reloadTime: 1.1
   weaponDescription: "Peggy:\nA buttery-smooth trigger, poppin\u2019 loud and clear\u2026
     let\u2019s give them critters a popcorn-worthy show!"
+  weaponDescriptionTranslated: []
   weaponAbilityDescription: Oh that's a great one. Activating the special ability
     let the bullets explode and deal areal damage.
+  weaponAbilityDescriptionTranslated: []
   playerKnockBack: 2.5
   enemyKnockBackPerBullet: 2
   bulletsPerShot: 3

@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: AssaultRifleSO_Tier_3
   m_EditorClassIdentifier: 
   weaponName: French Fries AR
+  weaponNameTranslated:
+  - "\u542F\u52A8\u65CB\u8F6C\u6728\u9A6C"
+  - Activate the caroussel
+  - Pommes AR
+  - Attiva la giostra
+  - "\u30E1\u30EA\u30FC\u30B4\u30FC\u30E9\u30F3\u30C9\u3092\u8D77\u52D5\u3057\u308D"
+  - Ative o carrossel
+  - "\u0410\u043A\u0442\u0438\u0432\u0438\u0440\u0443\u0439 \u043A\u0430\u0440\u0443\u0441\u0435\u043B\u044C"
+  - Activa el carrusel
   upgradeTier: 3
   bulletDamage: 6
   shootDelay: 0.1
@@ -20,8 +29,10 @@ MonoBehaviour:
   reloadTime: 1
   weaponDescription: "Peggy:\nA fry-ghtening display, this thing. This\u2019ll get
     \u2018em salty in no time."
+  weaponDescriptionTranslated: []
   weaponAbilityDescription: When activating your special ability, your firerate greatly
     increases.
+  weaponAbilityDescriptionTranslated: []
   playerKnockBack: 2
   enemyKnockBackPerBullet: 4
   bulletsPerShot: 1
