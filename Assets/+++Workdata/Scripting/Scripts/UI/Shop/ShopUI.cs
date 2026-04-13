@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using static WeaponBehaviour;
 
 public class ShopUI : MonoBehaviour
 {
@@ -318,7 +319,7 @@ public class ShopUI : MonoBehaviour
         {
             string refillString = InGameUIManager.Instance.dialogueUI.shopMenuButtonTexts[1].languages[LocalizationManager.Instance.localeIndex].dialogues[0];
             bool isFree = TutorialManager.Instance.fillAmmoForFree;
-            buttonText.text = isFree ? refillString+ "\nFREE" : refillString + $"\n{fillAmmoCost}";
+            buttonText.text = isFree ? refillString+ "\n" + InGameUIManager.Instance.dialogueUI.free[LocalizationManager.Instance.localeIndex] : refillString + $"\n{fillAmmoCost}";
 
             if (isFree || PlayerBehaviour.Instance.playerCurrency.CheckEnoughCurrency(fillAmmoCost))
             {
@@ -418,10 +419,10 @@ public class ShopUI : MonoBehaviour
                 _weaponDescription += " " + _weapon.weaponAbilityDescriptionTranslated[LocalizationManager.Instance.localeIndex];
             }
             
-            var _bulletDamageText = "Bullet" + "\n" + " Power" + "\n" + "\n" + _weapon.bulletDamage;
-            var _clipSizeText = "Ammo" + "\n" + "Capacity" + "\n" + "\n" + _weapon.clipSize;
-            var _bulletDelayText = "Rate of" + "\n" + "Fire" + "\n" + "\n" + _weapon.shootDelay; 
-            var _reloadSpeedText = "Refill" + "\n" + " Speed" + "\n" + "\n" + _weapon.reloadTime;
+            var _bulletDamageText = InGameUIManager.Instance.dialogueUI.bulletDamageText[LocalizationManager.Instance.localeIndex] + "\n" + "\n" + _weapon.bulletDamage;
+            var _clipSizeText = InGameUIManager.Instance.dialogueUI.clipSizeText[LocalizationManager.Instance.localeIndex] + "\n" + "\n" + _weapon.clipSize;
+            var _bulletDelayText = InGameUIManager.Instance.dialogueUI.bulletDelayText[LocalizationManager.Instance.localeIndex] + "\n" + "\n" + _weapon.shootDelay; 
+            var _reloadSpeedText = InGameUIManager.Instance.dialogueUI.reloadSpeedText[LocalizationManager.Instance.localeIndex] + "\n" + "\n" + _weapon.reloadTime;
             
             var _spriteWeapon = _weapon.uiWeaponVisual;
             

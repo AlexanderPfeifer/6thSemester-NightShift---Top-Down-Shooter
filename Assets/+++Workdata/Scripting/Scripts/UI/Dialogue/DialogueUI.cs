@@ -13,6 +13,13 @@ public class DialogueUI : MonoBehaviour
     public Dialogues[] fortuneWheelDialogues;
     public Dialogues[] shopMenuButtonTexts;
 
+    [Header("Seperate words")]
+    [TextArea] public string[] clipSizeText;
+    [TextArea] public string[] bulletDelayText;
+    [TextArea] public string[] bulletDamageText;
+    [TextArea] public string[] reloadSpeedText;
+    [TextArea] public string[] free;
+
     [Header("Price Dialogue")]
     public TextMeshProUGUI shopText;
     [FormerlySerializedAs("dialogueText")] public TextMeshProUGUI walkieTalkieText;
