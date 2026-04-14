@@ -53,11 +53,14 @@ public class PlayerBehaviour : Singleton<PlayerBehaviour>
 
     [Header("Interaction")]
     [SerializeField] private float interactRadius = 2;
+    [SerializeField] private float dropRadius = 2;
     [SerializeField] public LayerMask shopLayer;
     [SerializeField] public LayerMask generatorLayer;
     [SerializeField] public LayerMask duckLayer;
     [SerializeField] private LayerMask collectibleLayer;
     [SerializeField] private LayerMask rideLayer;
+    [SerializeField] private LayerMask ammoLayer;
+    [SerializeField] private LayerMask currencyLayer;
     private bool isPlayerBusy;
     public TextMeshProUGUI ammoText;
 
@@ -77,6 +80,7 @@ public class PlayerBehaviour : Singleton<PlayerBehaviour>
         if (playerSaveData.PositionBySceneName.TryGetValue(gameObject.scene.name, out var _position))
             transform.position = _position;
     }
+
     protected override void Awake()
     {
         base.Awake();
@@ -148,6 +152,24 @@ public class PlayerBehaviour : Singleton<PlayerBehaviour>
     {
         HandleInteractionSpriteSwitch();
         UpdateSprintTime();
+        UpdatePickUpDrops();
+    }
+
+    private void UpdatePickUpDrops()
+    {
+        if (GetDropInRange(currencyLayer, out Collider2D _currency))
+        {
+            playerCurrency.AddCurrency(_currency.gameObject.GetComponent<CurrencyDrop>().currencyCount, false);
+            Destroy(_currency.gameObject);
+        }
+        else if (GetDropInRange(ammoLayer, out Collider2D _ammo))
+        {
+            weaponBehaviour.ObtainAmmoDrop(_ammo.gameObject.GetComponent<AmmoDrop>(), 0, false);
+        }
+        else if (!GetDropInRange(ammoLayer, out _) && !ammoText.text.Contains(weaponBehaviour.noAmmoString))
+        {
+            ammoText.text = "";
+        }
     }
 
     private void FixedUpdate()
@@ -354,6 +376,7 @@ public class PlayerBehaviour : Singleton<PlayerBehaviour>
             animNoHand.SetFloat("MoveSpeed", rb.linearVelocity.sqrMagnitude);   
         }
     }    
+
     private void HandleInteractionSpriteSwitch()
     {
         shopSpriteRenderer.sprite = GetInteractionObjectInRange(shopLayer, out _) ? shopSpriteHighlight : shopSprite;
@@ -389,6 +412,12 @@ public class PlayerBehaviour : Singleton<PlayerBehaviour>
         return interactable != null;
     }
 
+    private bool GetDropInRange(LayerMask layer, out Collider2D drop)
+    {
+        drop = Physics2D.OverlapCircle(transform.position, dropRadius, layer);
+        return drop != null;
+    }
+
     public void SetPlayerBusy(bool isBusy)
     {
         currentMoveSpeed = baseMoveSpeed;
@@ -400,29 +429,11 @@ public class PlayerBehaviour : Singleton<PlayerBehaviour>
     {
         return isPlayerBusy;
     }    
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.TryGetComponent(out AmmoDrop _ammoDrop))
-        {
-            weaponBehaviour.ObtainAmmoDrop(_ammoDrop, 0, false);
-        }
-        else if (other.gameObject.TryGetComponent(out CurrencyDrop _currencyDrop))
-        {
-            playerCurrency.AddCurrency(_currencyDrop.currencyCount, false);
-            Destroy(other.gameObject);
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if(!ammoText.text.Contains(weaponBehaviour.noAmmoString))
-        {
-            ammoText.text = "";
-        }
-    }
 
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, interactRadius);
+
+        Gizmos.DrawWireSphere(transform.position, dropRadius);
     }
 }

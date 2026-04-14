@@ -1121,7 +1121,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1443695202
 Transform:
   m_ObjectHideFlags: 0
@@ -1154,7 +1154,7 @@ MonoBehaviour:
   - weaponName: Lollipop Shotgun
     getWeapon: 0
   - weaponName: French Fries AR
-    getWeapon: 0
+    getWeapon: 1
   - weaponName: Magnum magnum
     getWeapon: 0
   - weaponName: Popcorn Launcher
@@ -1163,7 +1163,7 @@ MonoBehaviour:
     getWeapon: 0
   activateRide: 1
   currencyAtStart: 0
-  playWave: 0
+  playWave: 1
 --- !u!1 &2024790019
 GameObject:
   m_ObjectHideFlags: 0
