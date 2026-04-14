@@ -21,7 +21,7 @@ MonoBehaviour:
   - "\u30B3\u30FC\u30F3\u30C9\u30C3\u30B0\u72E9\u731F\u30E9\u30A4\u30D5\u30EB"
   - "Rifle de ca\xE7a Corn Dog"
   - "\u041E\u0445\u043E\u0442\u043D\u0438\u0447\u044C\u044F \u0432\u0438\u043D\u0442\u043E\u0432\u043A\u0430
-    \xAB\u041A\u043E\u0440\u043D-\u0434\u043E\u0433\xBB"
+    \u041A\u043E\u0440\u043D-\u0434\u043E\u0433"
   - Rifle de caza Corn Dog
   upgradeTier: 0
   bulletDamage: 10

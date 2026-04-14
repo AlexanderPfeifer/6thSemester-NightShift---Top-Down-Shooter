@@ -16,11 +16,11 @@ MonoBehaviour:
   weaponNameTranslated:
   - "\u68D2\u68D2\u7CD6\u9730\u5F39\u67AA"
   - Lollipop Shotgun
-  - Lutscher-Schrotflinte
+  - Lutscher Schrotflinte
   - Fucile a pompa lecca-lecca
   - "\u30ED\u30EA\u30DD\u30C3\u30D7\u30B7\u30E7\u30C3\u30C8\u30AC\u30F3"
   - Espingarda pirulito
-  - "\u0414\u0440\u043E\u0431\u043E\u0432\u0438\u043A \xAB\u041B\u0435\u0434\u0435\u043D\u0435\u0446\xBB"
+  - "\u0414\u0440\u043E\u0431\u043E\u0432\u0438\u043A \u041B\u0435\u0434\u0435\u043D\u0435\u0446"
   - Escopeta piruleta
   upgradeTier: 0
   bulletDamage: 1
