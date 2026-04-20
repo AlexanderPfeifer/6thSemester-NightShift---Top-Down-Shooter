@@ -8,6 +8,7 @@ public class ShootingSignBehaviour : MonoBehaviour
     public bool isOnlyShootable;
     [SerializeField] private float shrinkYSizeOnShot = .6f;
     [SerializeField] string sortingLayerOnShot;
+    private CapsuleCollider2D groundCollider;
 
     public IEnumerator SnapDownOnHit()
     {
@@ -22,6 +23,11 @@ public class ShootingSignBehaviour : MonoBehaviour
         if (TutorialManager.Instance.playedFirstDialogue)
         {
             
+        }
+
+        if(TryGetComponent(out groundCollider))
+        {
+            groundCollider.enabled = false;
         }
 
         TutorialManager.Instance.AddAndCheckShotSigns();
